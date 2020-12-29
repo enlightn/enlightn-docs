@@ -19,6 +19,14 @@ Choosing the right session driver can make a major impact to the performance of 
 | Memcached | All          | Yes                        | Secure  | Robust option. |
 | DynamoDB  | All          | Yes                        | Secure  | Robust option. |
 
+::: warning
+If you change your session driver while in production, you should be aware that your session data will be lost during the transition.
+:::
+
+## Skip Condition
+
+This analyzer is skipped if your application is stateless (does not use the `StartSession` middleware).
+
 ## References
 
 - [Laravel Session Documentation](https://laravel.com/docs/session)

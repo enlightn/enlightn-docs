@@ -64,6 +64,7 @@ module.exports = {
                 '/performance/queue-driver-analyzer',
                 '/performance/route-caching-analyzer',
                 '/performance/session-driver-analyzer',
+                '/performance/shared-cache-lock-analyzer',
             ],
             collapsable: true,
             collapsed: true,
