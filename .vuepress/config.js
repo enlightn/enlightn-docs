@@ -54,8 +54,11 @@ module.exports = {
                 '/performance/cache-header-analyzer',
                 '/performance/collection-call-analyzer',
                 '/performance/config-caching-analyzer',
+                '/performance/debug-log-analyzer',
+                '/performance/dev-dependency-analyzer',
             ],
-            collapsable: false,
+            collapsable: true,
+            collapsed: true,
             sidebarDepth: 0,
         }
     ]
