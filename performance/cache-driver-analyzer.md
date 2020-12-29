@@ -2,7 +2,7 @@
 
 | Category       | Severity   | Time To Fix  |
 | -------------  |:----------:| ------------:|
-| :rocket: Performance | Major      | 1 hour       |
+| :rocket: Performance | Major | 1 hour       |
 
 ## Introduction
 
@@ -20,5 +20,5 @@ Choosing the right cache driver can make a major impact to the performance of yo
 
 ## References
 
-- [Laravel Caching Documentation](https://laravel.com/docs/master/cache#configuration)
+- [Laravel Caching Documentation](https://laravel.com/docs/cache#configuration)
 - [Cache Driver Benchmarks](https://www.georgebuckingham.com/laravel-cache-driver-performance/)

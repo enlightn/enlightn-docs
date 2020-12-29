@@ -53,6 +53,7 @@ module.exports = {
                 '/performance/cache-driver-analyzer',
                 '/performance/cache-header-analyzer',
                 '/performance/collection-call-analyzer',
+                '/performance/config-caching-analyzer',
             ],
             collapsable: false,
             sidebarDepth: 0,
