@@ -59,6 +59,7 @@ module.exports = {
                 '/performance/env-call-analyzer',
                 '/performance/horizon-suggestion-analyzer',
                 '/performance/minification-analyzer',
+                '/performance/mysql-single-server-analyzer',
             ],
             collapsable: true,
             collapsed: true,

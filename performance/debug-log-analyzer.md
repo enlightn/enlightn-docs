@@ -12,7 +12,11 @@ In a non-local environment, it is recommended that your log level should not be 
 - **Cost of Storage:** Debug logs are the most verbose and will increase the cost of storing logs.
 - **Cost of Processing:** If you use a third party service to accumulate logs across your servers, there will be incremental costs for processing logs based on your service provider.
 
-To change your log level, checkout your `config/logging.php` configuration file and your `LOG_LEVEL` env variable.
+To change your log level, check your `config/logging.php` configuration file and your `LOG_LEVEL` env variable.
+
+```bash
+LOG_LEVEL=warning
+```
 
 ## References
 
