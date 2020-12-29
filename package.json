@@ -1,0 +1,21 @@
+{
+  "name": "enlightn-docs",
+  "version": "0.0.1",
+  "description": "Enlightn - A Laravel Tool To Boost Your App's Performance & Security",
+  "main": "index.js",
+  "authors": {
+    "name": "Paras Malhotra",
+    "email": "paras@laravel-enlightn.com"
+  },
+  "repository": "enlightn/enlightn-docs",
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.7.1",
+    "@vuepress/plugin-medium-zoom": "^1.7.1",
+    "vuepress": "^1.5.3"
+  }
+}
