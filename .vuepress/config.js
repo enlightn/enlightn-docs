@@ -50,6 +50,8 @@ module.exports = {
             title: 'Performance Checks',
             path: '/performance/',
             children: [
+                '/performance/cache-driver-analyzer',
+                '/performance/cache-header-analyzer',
             ],
             collapsable: false,
             sidebarDepth: 0,
