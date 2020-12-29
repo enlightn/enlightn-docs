@@ -52,6 +52,7 @@ module.exports = {
             children: [
                 '/performance/cache-driver-analyzer',
                 '/performance/cache-header-analyzer',
+                '/performance/collection-call-analyzer',
             ],
             collapsable: false,
             sidebarDepth: 0,

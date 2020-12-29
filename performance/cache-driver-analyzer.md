@@ -2,7 +2,7 @@
 
 | Category       | Severity   | Time To Fix  |
 | -------------  |:----------:| ------------:|
-| 🚀 Performance | Major      | 1 hour       |
+| :rocket: Performance | Major      | 1 hour       |
 
 ## Introduction
 

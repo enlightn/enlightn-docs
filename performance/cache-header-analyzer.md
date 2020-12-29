@@ -2,7 +2,7 @@
 
 | Category       | Severity   | Time To Fix  |
 | -------------  |:----------:| ------------:|
-| 🚀 Performance | Major      | 1 hour       |
+| :rocket: Performance | Major      | 15 minutes   |
 
 ## Introduction
 
@@ -16,7 +16,7 @@ Caching can provide a significant performance boost for your application, especi
 
 ## Skip Condition
 
-This analyzer is skipped for local environments or if your application does not use Laravel Mix.
+This analyzer is skipped for local environments (if the `skip_env_specific` configuration option is set to true) or if your application does not use Laravel Mix.
 
 ## References
 
