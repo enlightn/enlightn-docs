@@ -65,9 +65,10 @@ module.exports = {
                 '/performance/route-caching-analyzer',
                 '/performance/session-driver-analyzer',
                 '/performance/shared-cache-lock-analyzer',
+                '/performance/unused-global-middleware-analyzer',
+                '/performance/view-caching-analyzer',
             ],
             collapsable: true,
-            collapsed: true,
             sidebarDepth: 0,
         }
     ]

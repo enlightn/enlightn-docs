@@ -2,7 +2,7 @@
 
 | Category       | Severity   | Time To Fix  |
 | -------------  |:----------:| ------------:|
-| :rocket: Performance | Minor | 5 minutes   |
+| :rocket: Performance | Major | 5 minutes   |
 
 ## Introduction
 
