@@ -63,6 +63,7 @@ module.exports = {
                 '/performance/opcache-analyzer',
                 '/performance/queue-driver-analyzer',
                 '/performance/route-caching-analyzer',
+                '/performance/session-driver-analyzer',
             ],
             collapsable: true,
             collapsed: true,
