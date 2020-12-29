@@ -31,6 +31,10 @@ php artisan config:clear
 You should make sure to re-cache your config as part of your application deployment so that any changes in config are updated.
 :::
 
+## Related Analyzers
+
+- [Env Call Analyzer](/docs/performance/env-call-analyzer)
+
 ## References
 
 - [Laravel Documentation on Config Caching](https://laravel.com/docs/configuration#configuration-caching)
