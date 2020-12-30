@@ -32,13 +32,15 @@ There could be numerous reasons why your cache hit ratio is low. Some of them in
 
 ## How To Reset Stats
 
-This analyzer does all its calculations based on the Telescope records in the database. So, if you prune your Telescope records every week, your cache hit ratio stats will be reset every week. This makes it flexible for you to choose how frequently you wish to reset your stats.
+This analyzer does all its calculations based on the Telescope records in the database. So, if you prune your Telescope records every week, your cache hit ratio stats will be reset every week.
+
+Generally, it would be a good practice to prune your Telescope records each time you deploy fresh code or push a new release. If your application is relatively stable, consider pruning Telescope records at a frequency (say every week or daily).
 
 ## Requirements
 
 This Telescope analyzer requires you to enable the Telescope `CacheWatcher`.
 
-## Special Note For Performance of Telescope Analyzers
+## Query Performance of Telescope Analyzers
 
 All Telescope analyzers work by querying your database for Telescope records. For enhanced query performance, we recommend that you convert the `content` column of your `telescope_entries` table to a `json` data type. Note that for PostgresQL this change is mandatory, since PostgresQL does not allow json queries on text data types.
 

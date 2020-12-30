@@ -79,6 +79,9 @@ module.exports = {
                 '/performance/telescope-cache-hit-ratio-analyzer',
                 '/performance/telescope-duplicate-query-analyzer',
                 '/performance/telescope-memory-intensive-request-analyzer',
+                '/performance/telescope-model-hydration-analyzer',
+                '/performance/telescope-non-queued-notification-analyzer',
+                '/performance/telescope-nplusone-query-analyzer'
             ],
             collapsable: true,
             sidebarDepth: 0,

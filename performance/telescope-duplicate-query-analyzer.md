@@ -16,7 +16,7 @@ Note that if the raw query is the same but the bindings are different, this anal
 
 Once duplicate queries are found, Enlightn will highlight the routes that have these duplicate queries. You can further investigate why these queries are triggered using Telescope.
 
-## How Do I Solve This Problem?
+## How To Remove Duplicate Queries?
 
 There could be numerous reasons why your application has duplicate queries. First, you must identify where these queries are duplicated.
 
@@ -24,17 +24,19 @@ For instance, perhaps two middlewares or service classes trigger the same query 
 
 Perhaps, multiple views are rendered within the same request, and they are all computing the same set of data. In this case, you may use [view composers](https://laravel.com/docs/views#view-composers) and extract the logic of data computation outside of the views.
 
-Typically the duplicate query issue can be solved if you extract the data computation to another class (which caches the result in memory) if multiple classes or services need the same set of data.
+Typically, the duplicate query issue can be solved if you extract the data computation to another class (which caches the result in memory) if multiple classes or services need the same set of data.
 
 ## How To Reset Findings
 
 This analyzer does all its calculations based on the Telescope records in the database. So, if you happen to fix a duplicate query issue, you may want to prune your Telescope records so that the next time Enlightn is run, it does not pick up the duplicate queries that have already been fixed.
 
+Generally, it would be a good practice to prune your Telescope records each time you deploy fresh code or push a new release. If your application is relatively stable, consider pruning Telescope records at a frequency (say every week or daily).
+
 ## Requirements
 
 This Telescope analyzer requires you to enable the Telescope `QueryWatcher` and `RequestWatcher`.
 
-## Special Note For Performance of Telescope Analyzers
+## Query Performance of Telescope Analyzers
 
 All Telescope analyzers work by querying your database for Telescope records. For enhanced query performance, we recommend that you convert the `content` column of your `telescope_entries` table to a `json` data type. Note that for PostgresQL this change is mandatory, since PostgresQL does not allow json queries on text data types.
 

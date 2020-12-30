@@ -18,7 +18,7 @@ By default, all routes that consume more than 50 MB of memory are flagged.
 
 There can be a number of reasons why your memory usage is high. Some good practices to reduce memory usage include:
 
-1. Make sure that you are not hydrating too many models. Try to use [lazy collections](https://laravel.com/docs/collections#lazy-collections) and [model chunking](https://laravel.com/docs/queries#chunking-results) where possible to reduce memory usage.
+1. Make sure that you are not hydrating too many models. Try to use [lazy collections](https://laravel.com/docs/collections#lazy-collections) and [query chunking](https://laravel.com/docs/queries#chunking-results) where possible to reduce memory usage.
 2. If you are storing files, check out [automatic streaming](https://laravel.com/docs/filesystem#automatic-streaming) to reduce memory usage.
 3. If you are reading files, consider using the `Filesystem::lines` method to lazily read file contents.
 4. Make sure that you are not running dev packages in production that consume too much memory.
@@ -37,7 +37,13 @@ You can customize the memory limit (default: 50 MB) using the `request_memory_li
 
 This Telescope analyzer requires you to enable the Telescope `RequestWatcher`.
 
-## Special Note For Performance of Telescope Analyzers
+## How To Reset Findings
+
+This analyzer does all its calculations based on the Telescope records in the database. So, if you happen to fix a memory usage issue, you may want to prune your Telescope records so that the next time Enlightn is run, it does not pick up the routes that have already been fixed.
+
+Generally, it would be a good practice to prune your Telescope records each time you deploy fresh code or push a new release. If your application is relatively stable, consider pruning Telescope records at a frequency (say every week or daily).
+
+## Query Performance of Telescope Analyzers
 
 All Telescope analyzers work by querying your database for Telescope records. For enhanced query performance, we recommend that you convert the `content` column of your `telescope_entries` table to a `json` data type. Note that for PostgresQL this change is mandatory, since PostgresQL does not allow json queries on text data types.
 
