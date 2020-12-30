@@ -78,6 +78,7 @@ module.exports = {
                 '/performance/redis-throttling-analyzer',
                 '/performance/telescope-cache-hit-ratio-analyzer',
                 '/performance/telescope-duplicate-query-analyzer',
+                '/performance/telescope-memory-intensive-request-analyzer',
             ],
             collapsable: true,
             sidebarDepth: 0,

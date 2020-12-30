@@ -40,7 +40,7 @@ All Telescope analyzers work by querying your database for Telescope records. Fo
 
 A migration code snippet on changing the column data type is provided [here](/performance/telescope-cache-hit-ratio-analyzer.html#special-note-for-performance-of-telescope-analyzers).
 
-Telescope analyzer queries can take considerable time depending on the number of Telescope records stored in your database. To further enhance performance, we recommend regularly pruning your Telescope entries. 
+Telescope analyzer queries can take considerable time if you have a large number of Telescope records stored in your database. To further enhance performance, we recommend regularly pruning your Telescope entries. 
 
 Note that this query is only executed when you run the `enlightn` Artisan command and does not impact performance of your application.
 

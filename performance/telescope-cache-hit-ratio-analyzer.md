@@ -104,7 +104,7 @@ class UpdateTelescopeEntriesTable extends Migration
 }
 ```
 
-Telescope analyzer queries can take considerable time depending on the number of Telescope records stored in your database. To further enhance performance, we recommend regularly pruning your Telescope entries.
+Telescope analyzer queries can take considerable time if you have a large number of Telescope records stored in your database. To further enhance performance, we recommend regularly pruning your Telescope entries.
 
 Note that this query is only executed when you run the `enlightn` Artisan command and does not impact performance of your application.
 
