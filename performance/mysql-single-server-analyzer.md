@@ -12,7 +12,7 @@ Of course, unix sockets can only be used if both your Laravel application and da
 
 ## How To Enable Unix Sockets
 
-First locate your MySQL configuration files.
+First, locate your MySQL configuration files.
 
 ```bash
 $ mysqld --verbose --help | grep -A 1 "Default options"

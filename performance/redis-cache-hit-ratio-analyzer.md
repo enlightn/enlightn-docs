@@ -31,7 +31,7 @@ There could be numerous reasons why your Redis cache hit ratio is low. Some of t
 
 ## How To Reset Redis Stats
 
-To monitor the health of your application and Redis server, you may want to run Enlightn on a frequent basis (say every month or so). If you are doing this, it will be helpful to reset your Redis stats so that the next time Enlightn runs, it only shows stats for the period from the last run.
+To monitor the health of your application and Redis server, you may want to run Enlightn on a frequent basis (say every month or maybe every time you deploy new code). If you are doing this, it will be helpful to reset your Redis stats so that the next time Enlightn runs, it only shows stats for the period from the last run.
 
 To do so, run the following command on your Redis CLI after running Enlightn (so that stats are reset for the next run):
 
@@ -39,9 +39,17 @@ To do so, run the following command on your Redis CLI after running Enlightn (so
 config resetstat
 ```
 
+If you wish to automate this in a self scheduled Laravel command, you can use the Redis facade instead:
+
+```php
+use Illuminate\Support\Facades\Redis;
+
+Redis::connection('cache')->rawCommand('config', 'resetstat');
+```
+
 ## References
 
 - [Key Redis Monitoring Metrics](https://scalegrid.io/blog/6-crucial-redis-monitoring-metrics/)
 - [Understanding Redis Performance](https://blog.newrelic.com/product-news/redis-performance-metrics/)
 - [Redis Documentation on Info Stats](https://redis.io/commands/info)
-- [Redis Documentation on the Reset Stats Command](https://redis.io/commands/config-resetstat)
+- [Redis Documentation on the Resetstat Command](https://redis.io/commands/config-resetstat)
