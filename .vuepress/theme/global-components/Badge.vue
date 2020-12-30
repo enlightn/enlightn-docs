@@ -42,4 +42,6 @@ export default {
     background-color $badgeWarningColor
   & + &
     margin-left 5px
+h1 > .badge
+ margin-left 0
 </style>

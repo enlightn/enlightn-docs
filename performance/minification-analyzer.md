@@ -28,6 +28,10 @@ By default, this analyzer assumes that your compiled JS and CSS files are somewh
 
 If there are no JS or CSS files within your configured build path, this analyzer is skipped.
 
+## Related Analyzers
+
+- [Compression Header Analyzer](/docs/performance/compression-header-analyzer)
+
 ## References
 
 - [Laravel Mix Documentation](https://laravel.com/docs/mix)
