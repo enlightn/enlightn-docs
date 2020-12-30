@@ -40,7 +40,21 @@ foreach ($books as $book) {
 }
 ```
 
-Refer the Laravel [eager loading](https://laravel.com/docs/eloquent-relationships#eager-loading) documentation to learn more.
+The N+1 query problem can not only appear in reads, but can also appear in writes. While eager loading solves the N+1 read query problem, bulk queries can solve the N+1 write query problem.
+
+Consider the following code:
+
+```php
+foreach ($bookData as $book) {
+    Book::create($book);
+}
+```
+
+Instead of inserting one record at a time, we can optimize this using bulk queries:
+
+```php
+Book::insert($bookData);
+```
 
 ## How To Reset Findings
 
@@ -75,3 +89,5 @@ This analyzer is skipped if your application does not have [Laravel Telescope](h
 
 - [Telescope Query Watcher Documentation](https://laravel.com/docs/telescope#query-watcher)
 - [Laravel Documentation on Eager Loading](https://laravel.com/docs/eloquent-relationships#eager-loading)
+- [Eager Loading (Servers For Hackers)](https://serversforhackers.com/laravel-perf/eager-loading)
+- [Database Chunking (Servers For Hackers)](https://serversforhackers.com/laravel-perf/database-chunking)

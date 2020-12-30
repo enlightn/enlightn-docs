@@ -81,7 +81,9 @@ module.exports = {
                 '/performance/telescope-memory-intensive-request-analyzer',
                 '/performance/telescope-model-hydration-analyzer',
                 '/performance/telescope-non-queued-notification-analyzer',
-                '/performance/telescope-nplusone-query-analyzer'
+                '/performance/telescope-nplusone-query-analyzer',
+                '/performance/telescope-slow-query-analyzer',
+                '/performance/telescope-slow-response-analyzer'
             ],
             collapsable: true,
             sidebarDepth: 0,

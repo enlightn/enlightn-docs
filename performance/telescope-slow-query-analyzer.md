@@ -12,37 +12,26 @@ pro: true
 
 This analyzer scans your Telescope records to detect slow queries along with the lines of code that are responsible for these queries.
 
-By default, slow queries are considered to be queries that take longer than 100 milliseconds. This can be customized in your Telescope QueryWatcher's `slow` configuration option.
+By default, queries are considered to be slow if they take longer than 100 milliseconds. This can be customized in your Telescope QueryWatcher's `slow` configuration option.
 
 ## How To Optimize Slow Queries?
 
-Laravel provides eager loading to solve the N+1 query problem. Consider the following code:
+There are a number of ways to optimize slow queries. Some of them include:
 
-```php
-$books = Book::all();
+1. Avoid using select * and define select fields instead where possible.
+2. Add a limit to your queries where possible.
+3. Use inner joins instead of outer joins where possible.
+4. Cache expensive queries.
+5. Perform expensive queries during non-peak hours (perhaps as scheduled commands) where possible.
+6. Carefully choose your table indexes based on your application's most frequent queries on the specific table.
+7. Use query explains to understand and optimize query execution plans.
+8. Avoid expensive operations such as like, distinct, etc. where possible.
 
-foreach ($books as $book) {
-echo $book->author->name;
-}
-```
-
-This loop will execute one query to retrieve all books and another query for each book to retrieve it's author. So, if there are 25 books, this will execute 26 queries.
-
-With eager loading, this can to 2 queries like so:
-
-```php
-$books = Book::with('author')->get();
-
-foreach ($books as $book) {
-    echo $book->author->name;
-}
-```
-
-Refer the Laravel [eager loading](https://laravel.com/docs/eloquent-relationships#eager-loading) documentation to learn more.
+Query optimization is an entire topic by itself and cannot be summarized in this documentation alone. In case the above tips don't help, do explore some SQL query optimization tutorials.
 
 ## How To Reset Findings
 
-This analyzer does all its calculations based on the Telescope records in the database. So, if you happen to fix an N+1 query issue, you may want to prune your Telescope records so that the next time Enlightn is run, it does not pick up the N+1 queries that have already been fixed.
+This analyzer does all its calculations based on the Telescope records in the database. So, if you happen to fix a slow query issue, you may want to prune your Telescope records so that the next time Enlightn is run, it does not pick up the slow queries that have already been fixed.
 
 Generally, it would be a good practice to prune your Telescope records each time you deploy fresh code or push a new release. If your application is relatively stable, consider pruning Telescope records at a frequency (say every week or daily).
 
@@ -67,9 +56,10 @@ This analyzer is skipped if your application does not have [Laravel Telescope](h
 ## Related Analyzers
 
 - [Telescope Duplicate Query Analyzer](/docs/performance/telescope-duplicate-query-analyzer)
-- [Telescope Slow Query Analyzer](/docs/performance/telescope-slow-query-analyzer)
+- [Telescope N+1 Query Analyzer](/docs/performance/telescope-nplusone-query-analyzer)
 
 ## References
 
 - [Telescope Query Watcher Documentation](https://laravel.com/docs/telescope#query-watcher)
-- [Laravel Documentation on Eager Loading](https://laravel.com/docs/eloquent-relationships#eager-loading)
+- [Eloquent Performance Patterns Course By Jonathan Reinink](https://eloquent-course.reinink.ca/)
+- [MySQL Indexing (Servers For Hackers)](https://serversforhackers.com/laravel-perf/mysql-indexing-one)

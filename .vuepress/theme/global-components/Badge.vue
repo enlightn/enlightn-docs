@@ -31,7 +31,7 @@ export default {
   line-height 18px
   border-radius 3px
   padding 0 6px
-  margin-left 1rem
+  margin-left 0
   color white
   background-color #42b983
   &.tip, &.green
@@ -42,6 +42,6 @@ export default {
     background-color $badgeWarningColor
   & + &
     margin-left 5px
-h1 > .badge
- margin-left 0
+a > .badge
+ margin-left 1rem
 </style>
