@@ -40,7 +40,7 @@ REDIS_SCHEME=unix
 
 Ensure that you have your `config/database.php` file refer to the above variables (notice the `scheme` addition below):
 
-```php
+```php{7}
 'redis' => [
     'client' => env('REDIS_CLIENT', 'phpredis'),
     

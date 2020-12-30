@@ -47,6 +47,14 @@ use Illuminate\Support\Facades\Redis;
 Redis::connection('cache')->rawCommand('config', 'resetstat');
 ```
 
+## Skip Condition
+
+This analyzer is skipped for local environments (if the `skip_env_specific` configuration option is set to true) or if your application does not use Redis as the default cache store.
+
+## Related Analyzers
+
+- [Telescope Cache Hit Ratio Analyzer](/docs/performance/telescope-cache-hit-ratio-analyzer)
+
 ## References
 
 - [Key Redis Monitoring Metrics](https://scalegrid.io/blog/6-crucial-redis-monitoring-metrics/)

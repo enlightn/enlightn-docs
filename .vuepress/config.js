@@ -76,6 +76,8 @@ module.exports = {
                 '/performance/redis-rate-limiting-analyzer',
                 '/performance/redis-single-server-analyzer',
                 '/performance/redis-throttling-analyzer',
+                '/performance/telescope-cache-hit-ratio-analyzer',
+                '/performance/telescope-duplicate-query-analyzer',
             ],
             collapsable: true,
             sidebarDepth: 0,
