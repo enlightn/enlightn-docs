@@ -33,7 +33,7 @@ You should make sure to re-cache your config as part of your application deploym
 
 ## Related Analyzers
 
-- [Env Call Analyzer](/docs/performance/env-call-analyzer)
+- [Env Call Analyzer](env-call-analyzer.html)
 
 ## References
 

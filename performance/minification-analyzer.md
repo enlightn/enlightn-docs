@@ -30,7 +30,7 @@ If there are no JS or CSS files within your configured build path, this analyzer
 
 ## Related Analyzers
 
-- [Compression Header Analyzer](/docs/performance/compression-header-analyzer)
+- [Compression Header Analyzer](compression-header-analyzer.html)
 
 ## References
 

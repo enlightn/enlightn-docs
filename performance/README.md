@@ -3,47 +3,47 @@
 Enlightn has 34 automated performance checks (including 17 Enlightn Pro checks).
 
 ## :rocket: Performance Quick Wins (In-Built In Laravel)
-- [Config Caching](/docs/performance/config-caching-analyzer)
-- [Route Caching](/docs/performance/route-caching-analyzer)
-- [View Caching](/docs/performance/view-caching-analyzer)
-- [Event Caching](/docs/performance/event-caching-analyzer) <Badge text="PRO" type="tip"/>
+- [Config Caching](config-caching-analyzer.html)
+- [Route Caching](route-caching-analyzer.html)
+- [View Caching](view-caching-analyzer.html)
+- [Event Caching](event-caching-analyzer.html) <Badge text="PRO" type="tip"/>
 
 ## ⏳ Performance Bottleneck Identification
-- [Unused Middleware](/docs/performance/unused-global-middleware-analyzer)
-- [Unnecessary Collection Calls](/docs/performance/collection-call-analyzer)
-- [Slow Queries](/docs/performance/telescope-slow-query-analyzer) <Badge text="PRO" type="tip"/>
-- [Duplicate Queries](/docs/performance/telescope-duplicate-query-analyzer) <Badge text="PRO" type="tip"/>
-- [N+1 Queries](/docs/performance/telescope-nplusone-query-analyzer) <Badge text="PRO" type="tip"/>
-- [Memory Intensive Requests](/docs/performance/telescope-memory-intensive-request-analyzer) <Badge text="PRO" type="tip"/>
-- [Slow Responses](/docs/performance/telescope-slow-response-analyzer) <Badge text="PRO" type="tip"/>
-- [Too Many Model Hydrations](/docs/performance/telescope-model-hydration-analyzer) <Badge text="PRO" type="tip"/>
+- [Unused Middleware](unused-global-middleware-analyzer.html)
+- [Unnecessary Collection Calls](collection-call-analyzer.html)
+- [Slow Queries](telescope-slow-query-analyzer.html) <Badge text="PRO" type="tip"/>
+- [Duplicate Queries](telescope-duplicate-query-analyzer.html) <Badge text="PRO" type="tip"/>
+- [N+1 Queries](telescope-nplusone-query-analyzer.html) <Badge text="PRO" type="tip"/>
+- [Memory Intensive Requests](telescope-memory-intensive-request-analyzer.html) <Badge text="PRO" type="tip"/>
+- [Slow Responses](telescope-slow-response-analyzer.html) <Badge text="PRO" type="tip"/>
+- [Too Many Model Hydrations](telescope-model-hydration-analyzer.html) <Badge text="PRO" type="tip"/>
 
 ## 🍽️ Serving Assets
-- [Minification](/docs/performance/minification-analyzer)
-- [Cache Headers](/docs/performance/cache-header-analyzer)
-- [CDN](/docs/performance/cdn-analyzer) <Badge text="PRO" type="tip"/>
-- [Compression Headers](/docs/performance/compression-header-analyzer) <Badge text="PRO" type="tip"/>
+- [Minification](minification-analyzer.html)
+- [Cache Headers](cache-header-analyzer.html)
+- [CDN](cdn-analyzer.html) <Badge text="PRO" type="tip"/>
+- [Compression Headers](compression-header-analyzer.html) <Badge text="PRO" type="tip"/>
 
 ## 🎛️ Infrastructure Tuning
-- [MySQL Sockets for Single Server Setups](/docs/performance/mysql-single-server-analyzer)
-- [Opcache](/docs/performance/opcache-analyzer)
-- [Redis Sockets for Single Server Setups](/docs/performance/redis-single-server-analyzer) <Badge text="PRO" type="tip"/>
-- [Redis Cache Hit Ratio](/docs/performance/redis-cache-hit-ratio-analyzer) <Badge text="PRO" type="tip"/>
-- [Cache Hit Ratio](/docs/performance/telescope-cache-hit-ratio-analyzer) <Badge text="PRO" type="tip"/>
+- [MySQL Sockets for Single Server Setups](mysql-single-server-analyzer.html)
+- [Opcache](opcache-analyzer.html)
+- [Redis Sockets for Single Server Setups](redis-single-server-analyzer.html) <Badge text="PRO" type="tip"/>
+- [Redis Cache Hit Ratio](redis-cache-hit-ratio-analyzer.html) <Badge text="PRO" type="tip"/>
+- [Cache Hit Ratio](telescope-cache-hit-ratio-analyzer.html) <Badge text="PRO" type="tip"/>
 
 ## 🛸 Choosing The Right Driver
-- [Cache Driver](/docs/performance/cache-driver-analyzer)
-- [Queue Driver](/docs/performance/queue-driver-analyzer)
-- [Session Driver](/docs/performance/session-driver-analyzer)
+- [Cache Driver](cache-driver-analyzer.html)
+- [Queue Driver](queue-driver-analyzer.html)
+- [Session Driver](session-driver-analyzer.html)
 
 ## 🏆 Good Practices
-- [Don't Install Dev Dependencies In Production](/docs/performance/dev-dependency-analyzer)
-- [Avoid Debug Log Levels In Production](/docs/performance/debug-log-analyzer)
-- [Avoid Env Calls Outside Of Config](/docs/performance/env-call-analyzer)
-- [Use Separate Redis Database For Locks](/docs/performance/shared-cache-lock-analyzer)
-- [Use Horizon For Redis Queues](/docs/performance/horizon-suggestion-analyzer)
-- [Queue Your Notifications](/docs/performance/telescope-non-queued-notification-analyzer) <Badge text="PRO" type="tip"/>
-- [Avoid Command Constructor Injections](/docs/performance/command-constructor-injection-analyzer) <Badge text="PRO" type="tip"/>
-- [Avoid Fallback Routes For Better SEO](/docs/performance/fallback-route-analyzer) <Badge text="PRO" type="tip"/>
-- [Use Redis Specific Throttling](/docs/performance/redis-throttling-analyzer) <Badge text="PRO" type="tip"/>
-- [Use Redis Specific Job Rate Limiting](/docs/performance/redis-rate-limiting-analyzer) <Badge text="PRO" type="tip"/>
+- [Don't Install Dev Dependencies In Production](dev-dependency-analyzer.html)
+- [Avoid Debug Log Levels In Production](debug-log-analyzer.html)
+- [Avoid Env Calls Outside Of Config](env-call-analyzer.html)
+- [Use Separate Redis Database For Locks](shared-cache-lock-analyzer.html)
+- [Use Horizon For Redis Queues](horizon-suggestion-analyzer.html)
+- [Queue Your Notifications](telescope-non-queued-notification-analyzer.html) <Badge text="PRO" type="tip"/>
+- [Avoid Command Constructor Injections](command-constructor-injection-analyzer.html) <Badge text="PRO" type="tip"/>
+- [Avoid Fallback Routes For Better SEO](fallback-route-analyzer.html) <Badge text="PRO" type="tip"/>
+- [Use Redis Specific Throttling](redis-throttling-analyzer.html) <Badge text="PRO" type="tip"/>
+- [Use Redis Specific Job Rate Limiting](redis-rate-limiting-analyzer.html) <Badge text="PRO" type="tip"/>

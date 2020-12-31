@@ -12,7 +12,7 @@ pro: true
 
 This analyzer checks to see if your application uses appropriate compression headers on your JS and CSS asset files.
 
-Compression headers are so underrated and they can provide a massive performance boost to your application. Picture this: [minification](/docs/performance/minification-analyzer) optimizes about ~20% file size, whereas compression headers can save 80%!
+Compression headers are so underrated and they can provide a massive performance boost to your application. Picture this: [minification](minification-analyzer.html) optimizes about ~20% file size, whereas compression headers can save 80%!
 
 Just to give you an idea, the performance boost from compression headers is probably equal to that gained by using every other frontend optimization strategy possible (tree shaking, minification, CSS purging, etc.).
 
@@ -83,7 +83,7 @@ This analyzer is skipped for local environments (if the `skip_env_specific` conf
 
 ## Related Analyzers
 
-- [Minification Analyzer](/docs/performance/minification-analyzer)
+- [Minification Analyzer](minification-analyzer.html)
 
 ## References
 

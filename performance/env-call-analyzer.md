@@ -14,7 +14,7 @@ It is recommended to only use the `env` function within your `config` files and 
 
 ## Related Analyzers
 
-- [Config Caching Analyzer](/docs/performance/config-caching-analyzer)
+- [Config Caching Analyzer](config-caching-analyzer.html)
 
 ## References
 

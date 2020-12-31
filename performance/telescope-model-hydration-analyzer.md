@@ -44,7 +44,7 @@ Generally, it would be a good practice to prune your Telescope records each time
 
 All Telescope analyzers work by querying your database for Telescope records. For enhanced query performance, we recommend that you convert the `content` column of your `telescope_entries` table to a `json` data type. Note that for PostgresQL this change is mandatory, since PostgresQL does not allow json queries on text data types.
 
-A migration code snippet on changing the column data type is provided [here](/performance/telescope-cache-hit-ratio-analyzer.html#special-note-for-performance-of-telescope-analyzers).
+A migration code snippet on changing the column data type is provided [here](telescope-cache-hit-ratio-analyzer.html#special-note-for-performance-of-telescope-analyzers).
 
 Telescope analyzer queries can take considerable time if you have a large number of Telescope records stored in your database. To further enhance performance, we recommend regularly pruning your Telescope entries. 
 
@@ -56,7 +56,7 @@ This analyzer is skipped if your application does not have [Laravel Telescope](h
 
 ## Related Analyzers
 
-- [Telescope Memory Intensive Request Analyzer](/docs/performance/telescope-memory-intensive-request-analyzer)
+- [Telescope Memory Intensive Request Analyzer](telescope-memory-intensive-request-analyzer.html)
 
 ## References
 

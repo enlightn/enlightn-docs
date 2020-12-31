@@ -53,7 +53,7 @@ This analyzer is skipped for local environments (if the `skip_env_specific` conf
 
 ## Related Analyzers
 
-- [Telescope Cache Hit Ratio Analyzer](/docs/performance/telescope-cache-hit-ratio-analyzer)
+- [Telescope Cache Hit Ratio Analyzer](telescope-cache-hit-ratio-analyzer.html)
 
 ## References
 

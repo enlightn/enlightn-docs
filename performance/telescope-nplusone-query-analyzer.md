@@ -14,7 +14,7 @@ This analyzer scans your Telescope records to detect N+1 queries along with the 
 
 N+1 queries mean more network round trips and a larger number of queries. They can slow down your application and overload your database.
 
-Note that Telescope flags N+1 queries as "duplicate". Enlightn detects duplicate queries separately in the [Telescope Duplicate Query Analyzer](/performance/telescope-duplicate-query-analyzer).
+Note that Telescope flags N+1 queries as "duplicate". Enlightn detects duplicate queries separately in the [Telescope Duplicate Query Analyzer](telescope-duplicate-query-analyzer.html).
 
 ## How To Solve The N+1 Query Problem?
 
@@ -70,7 +70,7 @@ This Telescope analyzer requires you to enable the Telescope `QueryWatcher`.
 
 All Telescope analyzers work by querying your database for Telescope records. For enhanced query performance, we recommend that you convert the `content` column of your `telescope_entries` table to a `json` data type. Note that for PostgresQL this change is mandatory, since PostgresQL does not allow json queries on text data types.
 
-A migration code snippet on changing the column data type is provided [here](/performance/telescope-cache-hit-ratio-analyzer.html#special-note-for-performance-of-telescope-analyzers).
+A migration code snippet on changing the column data type is provided [here](telescope-cache-hit-ratio-analyzer.html#special-note-for-performance-of-telescope-analyzers).
 
 Telescope analyzer queries can take considerable time if you have a large number of Telescope records stored in your database. To further enhance performance, we recommend regularly pruning your Telescope entries. 
 
@@ -82,8 +82,8 @@ This analyzer is skipped if your application does not have [Laravel Telescope](h
 
 ## Related Analyzers
 
-- [Telescope Duplicate Query Analyzer](/docs/performance/telescope-duplicate-query-analyzer)
-- [Telescope Slow Query Analyzer](/docs/performance/telescope-slow-query-analyzer)
+- [Telescope Duplicate Query Analyzer](telescope-duplicate-query-analyzer.html)
+- [Telescope Slow Query Analyzer](telescope-slow-query-analyzer.html)
 
 ## References
 

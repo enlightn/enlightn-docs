@@ -116,7 +116,7 @@ This analyzer is skipped for local environments (if the `skip_env_specific` conf
 
 ## Related Analyzers
 
-- [Redis Cache Hit Ratio Analyzer](/docs/performance/redis-cache-hit-ratio-analyzer)
+- [Redis Cache Hit Ratio Analyzer](redis-cache-hit-ratio-analyzer.html)
 
 ## References
 
