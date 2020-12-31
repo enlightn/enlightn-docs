@@ -93,7 +93,8 @@ module.exports = {
             path: '/security/',
             children: [
                 '/security/app-debug-analyzer',
-                '/security/app-debug-hide-analyzer'
+                '/security/app-debug-hide-analyzer',
+                '/security/app-key-analyzer'
             ],
             collapsable: true,
             sidebarDepth: 0,
