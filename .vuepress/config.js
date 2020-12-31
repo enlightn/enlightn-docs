@@ -87,6 +87,16 @@ module.exports = {
             ],
             collapsable: true,
             sidebarDepth: 0,
+        },
+        {
+            title: 'Security Checks',
+            path: '/security/',
+            children: [
+                '/security/app-debug-analyzer',
+                '/security/app-debug-hide-analyzer'
+            ],
+            collapsable: true,
+            sidebarDepth: 0,
         }
     ]
   },
