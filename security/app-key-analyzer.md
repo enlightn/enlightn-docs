@@ -40,6 +40,10 @@ Just make sure of the following while rotating your app key:
 
 You do not have to worry about password hashing, as the Laravel app key is not used for hashing passwords.
 
+## Related Analyzers
+
+- [Encrypted Cookies Analyzer](encrypted-cookies-analyzer.html)
+
 ## References
 
 - [Laravel Documentation on Encryption](https://laravel.com/docs/encryption)

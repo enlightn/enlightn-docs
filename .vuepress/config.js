@@ -95,7 +95,9 @@ module.exports = {
                 '/security/app-debug-analyzer',
                 '/security/app-debug-hide-analyzer',
                 '/security/app-key-analyzer',
-                '/security/csrf-analyzer'
+                '/security/csrf-analyzer',
+                '/security/encrypted-cookies-analyzer',
+                '/security/file-permissions-analyzer'
             ],
             collapsable: true,
             sidebarDepth: 0,
