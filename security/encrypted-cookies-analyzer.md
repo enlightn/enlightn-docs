@@ -22,6 +22,34 @@ It is not possible for the analyzer to assess what kind of data you are storing 
 
 Even if you don't store sensitive or user personal data in cookies, it's still recommended to use cookie encryption just to reduce the attack surface and for peace of mind!
 
+## How To Fix
+
+By default, Laravel adds the `EncryptCookies` middleware in the `web` middleware group of your `Kernel`. If you wish to encrypt cookies for your web routes, you can add this middleware to the `web` middleware group in your `App\Http\Kernel` class:
+
+```php{8}
+/**
+ * The application's route middleware groups.
+ *
+ * @var array
+ */
+protected $middlewareGroups = [
+    'web' => [
+        \App\Http\Middleware\EncryptCookies::class,
+        \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
+        \Illuminate\Session\Middleware\StartSession::class,
+        // \Illuminate\Session\Middleware\AuthenticateSession::class,
+        \Illuminate\View\Middleware\ShareErrorsFromSession::class,
+        \App\Http\Middleware\VerifyCsrfToken::class,
+        \Illuminate\Routing\Middleware\SubstituteBindings::class,
+    ],
+
+    'api' => [
+        'throttle:api',
+        \Illuminate\Routing\Middleware\SubstituteBindings::class,
+    ],
+];
+```
+
 ## Skip Condition
 
 This analyzer is skipped for stateless apps or apps that do not use cookies.

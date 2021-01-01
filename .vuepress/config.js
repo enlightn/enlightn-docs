@@ -99,7 +99,8 @@ module.exports = {
                 '/security/encrypted-cookies-analyzer',
                 '/security/file-permissions-analyzer',
                 '/security/fillable-foreign-key-analyzer',
-                '/security/frontend-vulnerable-dependency-analyzer'
+                '/security/frontend-vulnerable-dependency-analyzer',
+                '/security/hsts-header-analyzer'
             ],
             collapsable: true,
             sidebarDepth: 0,

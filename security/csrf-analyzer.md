@@ -12,7 +12,33 @@ CSRF is an attack that tricks the victim into submitting a malicious request. La
 
 ## How To Fix
 
-By default, Laravel adds the `VerifyCSRFToken` middleware in the `web` middleware group. That's a sensible option because you would want to protect all web routes from CSRF attacks (stateless routes don't need protection).
+By default, Laravel adds the `VerifyCSRFToken` middleware in the `web` middleware group of your `Kernel`. That's a sensible option because you would want to protect all web routes from CSRF attacks (stateless routes don't need protection).
+
+If you wish to add CSRF protection to your web routes, you can add the `VerifyCSRFToken` middleware in the `web` middleware group of your `App\Http\Kernel` class:
+
+```php{13}
+/**
+ * The application's route middleware groups.
+ *
+ * @var array
+ */
+protected $middlewareGroups = [
+    'web' => [
+        \App\Http\Middleware\EncryptCookies::class,
+        \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
+        \Illuminate\Session\Middleware\StartSession::class,
+        // \Illuminate\Session\Middleware\AuthenticateSession::class,
+        \Illuminate\View\Middleware\ShareErrorsFromSession::class,
+        \App\Http\Middleware\VerifyCsrfToken::class,
+        \Illuminate\Routing\Middleware\SubstituteBindings::class,
+    ],
+
+    'api' => [
+        'throttle:api',
+        \Illuminate\Routing\Middleware\SubstituteBindings::class,
+    ],
+];
+```
 
 If you wish to exclude some specific web routes from the CSRF middleware, it is advisable to add these routes to the `$except` variable in the CSRF middleware class.
 
