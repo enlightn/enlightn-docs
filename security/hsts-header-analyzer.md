@@ -28,6 +28,24 @@ For Apache, you may use the `Header` directive in your `<VirtualHost>`, `<Direct
 Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains"
 ```
 
+## Configuration Options
+
+By default, this analyzer looks for a named route called `login` to inspect the headers in the response. You may change the route the analyzer hits by specifying the `guest_url` configuration option in your `config/enlightn.php` file:
+
+```php
+/*
+|--------------------------------------------------------------------------
+| Guest URL
+|--------------------------------------------------------------------------
+|
+| Specify any guest url or path (preferably your app's login url) here. This
+| would be used by Enlightn to inspect your application HTTP headers.
+| Example: '/login'.
+|
+*/
+'guest_url' => '/login',
+```
+
 ## Skip Condition
 
 This analyzer is skipped if your app is not HTTPS only (verified by the `session.secure` configuration option).

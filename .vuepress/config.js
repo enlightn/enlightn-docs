@@ -100,7 +100,8 @@ module.exports = {
                 '/security/file-permissions-analyzer',
                 '/security/fillable-foreign-key-analyzer',
                 '/security/frontend-vulnerable-dependency-analyzer',
-                '/security/hsts-header-analyzer'
+                '/security/hsts-header-analyzer',
+                '/security/http-only-cookie-analyzer'
             ],
             collapsable: true,
             sidebarDepth: 0,
