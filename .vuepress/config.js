@@ -94,7 +94,8 @@ module.exports = {
             children: [
                 '/security/app-debug-analyzer',
                 '/security/app-debug-hide-analyzer',
-                '/security/app-key-analyzer'
+                '/security/app-key-analyzer',
+                '/security/csrf-analyzer'
             ],
             collapsable: true,
             sidebarDepth: 0,
