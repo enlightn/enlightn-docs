@@ -101,7 +101,8 @@ module.exports = {
                 '/security/fillable-foreign-key-analyzer',
                 '/security/frontend-vulnerable-dependency-analyzer',
                 '/security/hsts-header-analyzer',
-                '/security/http-only-cookie-analyzer'
+                '/security/http-only-cookie-analyzer',
+                '/security/license-analyzer'
             ],
             collapsable: true,
             sidebarDepth: 0,

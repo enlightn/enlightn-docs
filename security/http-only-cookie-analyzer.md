@@ -27,7 +27,6 @@ Simply set the `http_only` attribute in your `config/session.php` file to true:
 | the HTTP protocol. You are free to modify this option if needed.
 |
 */
-
 'http_only' => true,
 ```
 
