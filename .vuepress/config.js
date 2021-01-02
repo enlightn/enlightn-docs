@@ -105,7 +105,8 @@ module.exports = {
                 '/security/license-analyzer',
                 '/security/login-throttling-analyzer',
                 '/security/mass-assignment-analyzer',
-                '/security/php-ini-analyzer'
+                '/security/php-ini-analyzer',
+                '/security/stable-dependency-analyzer'
             ],
             collapsable: true,
             sidebarDepth: 0,
