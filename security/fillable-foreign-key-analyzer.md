@@ -31,6 +31,10 @@ There may be cases where it is perfectly fine to whitelist foreign keys. For ins
 
 It is difficult for the analyzer to assess such situations. So, it flags a failure nonetheless (better safe than sorry right?). Feel free to ignore such warnings.
 
+## Related Analyzers
+
+- [Mass Assignment Analyzer](mass-assignment-analyzer.html)
+
 ## References
 
 - [Laravel Documentation on Mass Assignment](https://laravel.com/docs/eloquent#mass-assignment)

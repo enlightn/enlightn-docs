@@ -76,7 +76,7 @@ Route::post('/login', [AuthenticatedSessionController::class, 'store'])
 
 ## Skip Condition
 
-This analyzer is skipped for stateless apps or apps that use Laravel UI or Fortify (as these packages have custom in-built throttling mechanisms).
+This analyzer is skipped for stateless apps or apps that use Laravel UI or Fortify's in-built login throttling.
 
 ## References
 

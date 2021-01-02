@@ -103,7 +103,9 @@ module.exports = {
                 '/security/hsts-header-analyzer',
                 '/security/http-only-cookie-analyzer',
                 '/security/license-analyzer',
-                '/security/login-throttling-analyzer'
+                '/security/login-throttling-analyzer',
+                '/security/mass-assignment-analyzer',
+                '/security/php-ini-analyzer'
             ],
             collapsable: true,
             sidebarDepth: 0,
