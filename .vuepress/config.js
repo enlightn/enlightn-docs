@@ -102,7 +102,8 @@ module.exports = {
                 '/security/frontend-vulnerable-dependency-analyzer',
                 '/security/hsts-header-analyzer',
                 '/security/http-only-cookie-analyzer',
-                '/security/license-analyzer'
+                '/security/license-analyzer',
+                '/security/login-throttling-analyzer'
             ],
             collapsable: true,
             sidebarDepth: 0,
