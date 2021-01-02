@@ -106,7 +106,10 @@ module.exports = {
                 '/security/login-throttling-analyzer',
                 '/security/mass-assignment-analyzer',
                 '/security/php-ini-analyzer',
-                '/security/stable-dependency-analyzer'
+                '/security/stable-dependency-analyzer',
+                '/security/unguarded-models-analyzer',
+                '/security/up-to-date-dependency-analyzer',
+                '/security/vulnerable-dependency-analyzer'
             ],
             collapsable: true,
             sidebarDepth: 0,

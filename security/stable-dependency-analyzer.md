@@ -24,6 +24,11 @@ composer update --prefer-stable
 It is not recommended to run a `composer update` command on your production servers. Instead, run the above command in a local environment and commit the `composer.lock` file.
 :::
 
+## Related Analyzers
+
+- [Up To Date Dependency Analyzer](up-to-date-dependency-analyzer.html)
+- [Vulnerable Dependency Analyzer](vulnerable-dependency-analyzer.html)
+
 ## References
 
 - [Composer Documentation on the Update Command](https://getcomposer.org/doc/03-cli.md#update-u)

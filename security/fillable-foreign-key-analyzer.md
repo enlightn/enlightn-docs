@@ -34,6 +34,7 @@ It is difficult for the analyzer to assess such situations. So, it flags a failu
 ## Related Analyzers
 
 - [Mass Assignment Analyzer](mass-assignment-analyzer.html)
+- [Unguarded Models Analyzer](unguarded-models-analyzer.html)
 
 ## References
 

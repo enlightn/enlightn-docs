@@ -42,6 +42,7 @@ $user->forceFill($request->only(['email', 'address', 'country', 'phone']))->save
 ## Related Analyzers
 
 - [Fillable Foreign Key Analyzer](fillable-foreign-key-analyzer.html)
+- [Unguarded Models Analyzer](unguarded-models-analyzer.html)
 
 ## References
 

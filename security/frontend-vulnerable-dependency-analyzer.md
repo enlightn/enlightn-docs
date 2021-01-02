@@ -51,6 +51,10 @@ Unlike PHP, Javascript dependency trees are huge! While that's great for having 
 
 In a nutshell, **don't take frontend dependencies lightly**. If any of your customers had their financial data stolen because of frontend vulnerabilities in your application, they can potentially hold you responsible!   
 
+## Related Analyzers
+
+- [Vulnerable Dependency Analyzer](vulnerable-dependency-analyzer.html)
+
 ## References
 
 - [NPM Audit Documentation](https://docs.npmjs.com/cli/v6/commands/npm-audit)
