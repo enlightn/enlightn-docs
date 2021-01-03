@@ -69,7 +69,7 @@ public function downloadDocument(Request $request)
 }
 ``` 
 
-::: warning
+::: danger
 `realpath` converts the directory to a real path without any `../`. Just using `realpath` will not protect your application. You will need to validate the result of the `realpath` function as above. This analyzer, however, will not result in a failure if you are using the `realpath` function as it assumes that you are using it to validate the path.
 :::
 
@@ -77,7 +77,7 @@ public function downloadDocument(Request $request)
 
 For even more security, you may set the `doc_root` and `open_basedir` PHP configuration settings to your application root directory. This limits the files that can be accessed by PHP to the specified directory. Be sure to check out the PHP documentation on these configuration settings (listed below in the references section).
 
-::: warning
+::: danger
 Using `open_basedir` will disable the realpath cache. This may adversely impact your application performance. 
 :::
 

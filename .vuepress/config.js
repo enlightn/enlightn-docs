@@ -118,7 +118,8 @@ module.exports = {
                 '/security/debug-statement-analyzer',
                 '/security/directory-traversal-analyzer',
                 '/security/eval-analyzer',
-                '/security/extract-analyzer'
+                '/security/extract-analyzer',
+                '/security/file-bomb-validation-analyzer'
             ],
             collapsable: true,
             sidebarDepth: 0,

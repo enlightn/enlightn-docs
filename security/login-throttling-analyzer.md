@@ -27,7 +27,7 @@ http {
 }
 ```
 
-::: warning
+::: danger
 If your incoming requests are spread across multiple servers, this won't work as each server will maintain its own count.
 :::
 

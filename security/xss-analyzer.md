@@ -26,7 +26,7 @@ For Apache, you may use the `Header` directive in your `<VirtualHost>`, `<Direct
 Header always set Content-Security-Policy "default-src 'self';"
 ```
 
-::: warning
+::: danger
 Note that the header above is just an example. Make sure to read the content security policy documentation in the links below to understand what directives and sources would be valid for your application.
 
 If you miss certain sources, it may mean that some of your JS scripts or CSS styles may not apply properly. Make sure to open the Developer Console in your browser to confirm there are no errors after your configuration is complete. 
