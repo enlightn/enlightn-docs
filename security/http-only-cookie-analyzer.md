@@ -8,7 +8,7 @@
 
 A cookie with an `HttpOnly` attribute is inaccessible from Javascript. The `http_only` configuration option in your `config/session.php` file determines whether your session cookie should set the `HttpOnly` attribute.
 
-This analyzer confirms that your session cookie sets the `HttpOnly` attribute. 
+This analyzer confirms that your session cookie sets the `HttpOnly` attribute.
 
 If this is not enabled, it may expose your application to cross-site scripting (XSS) attacks. Unless, you have a very specific use case to require session cookies to be accessed from Javascript, it is recommended to enable this option.
 
@@ -38,3 +38,5 @@ This analyzer is skipped if your app is stateless (does not use sessions).
 
 - [HttpOnly OWASP Guide](https://owasp.org/www-community/HttpOnly)
 - [Introduction to the HttpOnly Cookie Attribute](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#Restrict_access_to_cookies)
+- [OWASP Cookie Security Guide](https://owasp.org/www-chapter-london/assets/slides/OWASPLondon20171130_Cookie_Security_Myths_Misconceptions_David_Johansson.pdf)
+- [OWASP Session Management Cheatsheet](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html)

@@ -112,7 +112,10 @@ module.exports = {
                 '/security/vulnerable-dependency-analyzer',
                 '/security/xss-analyzer',
                 '/security/clickjacking-analyzer',
-                '/security/column-name-sql-injection-analyzer'
+                '/security/column-name-sql-injection-analyzer',
+                '/security/command-injection-analyzer',
+                '/security/cookie-domain-analyzer',
+                '/security/debug-statement-analyzer'
             ],
             collapsable: true,
             sidebarDepth: 0,
