@@ -60,7 +60,7 @@ use Illuminate\Http\Request;
 
 public function downloadDocument(Request $request)
 {
-    $path = storage_path('somedir/'.$request->input('path'));
+    $path = realpath(storage_path('somedir/'.$request->input('path')));
     if (! Str::startsWith($path, storage_path())) {
         abort(403);
     }
