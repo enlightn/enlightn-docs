@@ -116,7 +116,9 @@ module.exports = {
                 '/security/command-injection-analyzer',
                 '/security/cookie-domain-analyzer',
                 '/security/debug-statement-analyzer',
-                '/security/directory-traversal-analyzer'
+                '/security/directory-traversal-analyzer',
+                '/security/eval-analyzer',
+                '/security/extract-analyzer'
             ],
             collapsable: true,
             sidebarDepth: 0,

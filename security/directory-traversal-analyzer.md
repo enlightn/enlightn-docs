@@ -21,11 +21,11 @@ use Illuminate\Http\Request;
 
 public function downloadDocument(Request $request)
 {
-    return response()->download(storage_path().'/'.$request->input('filename'));
+    return response()->download(storage_path('/').$request->input('filename'));
 }
 ```
 
-The above code is vulnerable to directory traversal attacks. If the user provides a filename such as `../../../etc/passwd`, then the user may gain access to your `/etc/passwd` file depending on your application's root path.
+The above code is vulnerable to directory traversal attacks. If the user provides a filename such as `../../../../etc/passwd`, then the user may gain access to your `/etc/passwd` file depending on your application's root path.
 
 Other examples of vulnerable code include:
 
@@ -37,6 +37,7 @@ response()->file($request->input('path').'.xml');
 file_get_contents($request->post('path'));
 (new Filesystem())->get($request->input('path'));
 (new Filesystem())->copy($request->input('path'), 'sometarget');
+Storage::download($request->input('path'));
 Storage::get($request->input('path'));
 ```
 
