@@ -2,7 +2,7 @@
 
 | Category       | Severity   | Time To Fix  |
 | -------------  |:----------:| ------------:|
-| 🛡️ Security    | Critical   | 60 minutes   |
+| 🛡️ Security    | ⚠️ Critical | 60 minutes   |
 
 ## Introduction
 

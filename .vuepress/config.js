@@ -109,7 +109,10 @@ module.exports = {
                 '/security/stable-dependency-analyzer',
                 '/security/unguarded-models-analyzer',
                 '/security/up-to-date-dependency-analyzer',
-                '/security/vulnerable-dependency-analyzer'
+                '/security/vulnerable-dependency-analyzer',
+                '/security/xss-analyzer',
+                '/security/clickjacking-analyzer',
+                '/security/column-name-sql-injection-analyzer'
             ],
             collapsable: true,
             sidebarDepth: 0,
