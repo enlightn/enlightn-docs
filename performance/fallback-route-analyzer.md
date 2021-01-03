@@ -58,7 +58,8 @@ protected $spaAction = 'SPAController@index';
  *
  * @return void
  */
-public function boot() {
+public function boot()
+{
     ...
     
     Route::middleware('web')

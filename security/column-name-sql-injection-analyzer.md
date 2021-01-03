@@ -19,7 +19,8 @@ Consider an example of a search box, where you give an option to the user to sea
 ```php
 use App\Models\Book;
 
-public function searchBooks(Request $request) {
+public function searchBooks(Request $request)
+{
     // Request input dictates column name in where clause.
     return Book::where($request->input('search_field'), $request->input('query'))
                 ->get();
@@ -51,7 +52,8 @@ Instead of directly having the user dictate the column name, you must validate t
 ```php
 use App\Models\Book;
 
-public function searchBooks(Request $request) {
+public function searchBooks(Request $request)
+{
     $validated = $request->validate([
         'search_field' => 'in:author,title,isbn',
     ]);

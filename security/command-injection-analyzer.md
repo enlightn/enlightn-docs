@@ -18,7 +18,8 @@ Consider an example where your application needs to perform a `whois` on a user 
 
 ```php
 
-public function verifyDomain(Request $request) {
+public function verifyDomain(Request $request)
+{
     exec('whois '.$request->input('domain'));
 }
 ```

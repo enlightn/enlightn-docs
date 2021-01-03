@@ -115,7 +115,8 @@ module.exports = {
                 '/security/column-name-sql-injection-analyzer',
                 '/security/command-injection-analyzer',
                 '/security/cookie-domain-analyzer',
-                '/security/debug-statement-analyzer'
+                '/security/debug-statement-analyzer',
+                '/security/directory-traversal-analyzer'
             ],
             collapsable: true,
             sidebarDepth: 0,
