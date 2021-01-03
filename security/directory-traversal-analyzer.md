@@ -68,18 +68,8 @@ public function downloadDocument(Request $request)
 }
 ``` 
 
-**Important Note:** `realpath` converts the directory to a real path without any `../`. Just using `realpath` will not protect your application. You will need to validate the result of the `realpath` function as above. This analyzer, however, will not result in a failure if you are using the `realpath` function as it assumes that you are using it to validate the path. 
-
-### Option 3: Using Storage::download
-
-If you intend to download a file from storage, it is safe to use `Storage::download` as Laravel has in-built protection:
-
-```php
-return Storage::download($request->input('path'));
-```
-
 ::: warning
-This only works if your file is in the root storage path as internally `Storage::download` calls the `basename` function on the first argument. Also, you must not provide the second argument for this to work.
+`realpath` converts the directory to a real path without any `../`. Just using `realpath` will not protect your application. You will need to validate the result of the `realpath` function as above. This analyzer, however, will not result in a failure if you are using the `realpath` function as it assumes that you are using it to validate the path.
 :::
 
 ## PHP Secure Configuration Settings
