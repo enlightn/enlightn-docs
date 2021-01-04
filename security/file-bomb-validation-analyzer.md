@@ -33,6 +33,10 @@ If you can avoid XML or ZIP files in your application, it would be the easiest w
 
 If that is not an option, avoid decompressing the ZIP files you accept from users. As for XML files, there is a wide variety of security checks you would need to implement. You may refer the OWASP XML security cheatsheet in the references below.
 
+## Related Analyzers
+
+- [File Size Validation Analyzer](file-size-validation-analyzer.html)
+
 ## References
 
 - [OWASP Guide on XXE Attacks](https://owasp.org/www-community/vulnerabilities/XML_External_Entity_(XXE)_Processing)

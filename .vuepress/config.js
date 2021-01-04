@@ -119,7 +119,12 @@ module.exports = {
                 '/security/directory-traversal-analyzer',
                 '/security/eval-analyzer',
                 '/security/extract-analyzer',
-                '/security/file-bomb-validation-analyzer'
+                '/security/file-bomb-validation-analyzer',
+                '/security/file-size-validation-analyzer',
+                '/security/hard-coded-credentials-analyzer',
+                '/security/horizon-security-analyzer',
+                '/security/nova-security-analyzer',
+                '/security/telescope-security-analyzer'
             ],
             collapsable: true,
             sidebarDepth: 0,
