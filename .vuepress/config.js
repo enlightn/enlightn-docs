@@ -140,6 +140,19 @@ module.exports = {
             ],
             collapsable: true,
             sidebarDepth: 0,
+        },
+        {
+            title: 'Reliability Checks',
+            path: '/reliability/',
+            children: [
+                '/reliability/cache-prefix-analyzer',
+                '/reliability/cache-status-analyzer',
+                '/reliability/composer-validation-analyzer',
+                '/reliability/database-status-analyzer',
+                '/reliability/dead-code-analyzer'
+            ],
+            collapsable: true,
+            sidebarDepth: 0,
         }
     ]
   },
