@@ -8,9 +8,9 @@
 
 So many applications today are HTTPS only. Besides the obvious security and trust benefits, HTTPS also boosts your SEO ranking.
 
-For HTTPS only apps, it is recommended to include the HTTP Strict Transport Security (HSTS) header. This header tells browsers that it should only be accessed using HTTPS, instead of using HTTP.
+For HTTPS only apps, it is recommended to include the HTTP Strict Transport Security (HSTS) header. This header tells browsers that it should only be accessed using HTTPS, instead of using HTTP and helps prevent man-in-the-middle attacks.
 
-This additional security header helps prevent man-in-the-middle attacks. 
+This analyzer detects whether your application sets the HSTS header if it is an HTTPS only app.
 
 ## How To Fix
 

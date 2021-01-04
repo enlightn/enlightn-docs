@@ -22,7 +22,7 @@ It could be argued that `eval` is fine if it isn't provided user input. But that
 4. Using `eval` can prevent the evaluated code and the code surrounding it from being optimised by Opcache and/or by a JIT compiler.
 5. `eval` code is unreadable and your IDE will not recognize or format the code.
 
-In a nutshell, `eval` is bad for security, performance, code readability and debugging. We have spoken.
+In a nutshell, `eval` is bad for security, performance, code readability and debugging.
 
 ## How To Fix
 

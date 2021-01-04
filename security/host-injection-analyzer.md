@@ -64,7 +64,7 @@ proxy_set_header X-Forwarded-Host $host;
 proxy_set_header X-Forwarded-Port $server_port;
 ```
 
-### Option 4: Replace IP Address At Your Reverse Proxy
+### Option 4: Replace IP Address At Your Application Web Server(s)
 
 If you are using Nginx, you may replace the remote IP address directly from the X-Forwarded-For header, without the need to setup trusted proxies in Laravel: 
 
@@ -72,7 +72,17 @@ If you are using Nginx, you may replace the remote IP address directly from the 
 real_ip_header X-Forwarded-For;
 ```
 
-After you add the directive above, remove both the `TrustProxies` and `TrustHosts` middleware.
+Make sure you set this at your application web server(s) and not at your load balancer/reverse proxy. This directive replaces the remote IP address with the `X-Forwarded-For` IP address that the web server receives from the load balancer/reverse proxy.
+
+You may also add a `set_real_ip_from` directive so that it only trusts valid load balancers/reverse proxies:
+
+```ini
+set_real_ip_from 172.0.0.0/8;
+```
+
+The IP address CIDR added above should be replaced with that of your load balancers or reverse proxies (assuming they are in the same VPN). This may not be required if you have a firewall rule setup to only allow incoming traffic to your web server(s) from your load balancer/reverse proxy VPN.
+
+After you add the directives above, remove both the `TrustProxies` and `TrustHosts` middleware.
 
 ::: warning
 This analyzer currently only passes with Option 1 and 4. So, if you are solving the issue with Option 2 or 3, you may ignore this analyzer.
@@ -85,4 +95,7 @@ This analyzer is skipped if your application does not use trusted proxies.
 ## References
 
 - [Host Injection Demo on A Laravel App](https://www.youtube.com/watch?v=KGTTlzZiihw)
+- [Laravel Documentation on Trusted Proxies](https://laravel.com/docs/requests#configuring-trusted-proxies)
 - [Discussion on Host Injection on the Laravel Repo](https://github.com/laravel/laravel/pull/5477)
+- [Nginx Documentation on the Real IP Module](http://nginx.org/en/docs/http/ngx_http_realip_module.html)
+- [Nginx Documentation on the Proxy Module](http://nginx.org/en/docs/http/ngx_http_proxy_module.html)
