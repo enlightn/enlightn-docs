@@ -2,7 +2,7 @@
 pro: true
 ---
 
-# Directory Traversal Analyzer <Badge text="PRO" type="tip"/>
+# Unrestricted File Upload Analyzer <Badge text="PRO" type="tip"/>
 
 | Category       | Severity   | Time To Fix  |
 | -------------  |:----------:| ------------:|
@@ -10,35 +10,29 @@ pro: true
 
 ## Introduction
 
-This analyzer scans your application code for possible directory traversal vulnerabilities.
+This analyzer scans your application code to detect unrestricted file uploads.
 
-A directory traversal attack aims to access files and directories that are stored outside the web root folder by manipulating variables that reference files with “dot-dot-slash (../)” sequences and its variations or by using absolute file paths. 
+If your application allows user controlled data to construct the path of a file upload, this may result in overwriting a critical file or storing the file in a bad location.
 
 Consider the following code:
 
 ```php
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
-public function downloadDocument(Request $request)
+public function upload(Request $request)
 {
-    return response()->download(storage_path('/').$request->input('filename'));
+    Storage::put($request->input('path'), $request->file('uploadFile'));
 }
 ```
 
-The above code is vulnerable to directory traversal attacks. If the user provides a filename such as `../../../../etc/passwd`, then the user may gain access to your `/etc/passwd` file depending on your application's root path.
+The code above is vulnerable to overwriting any file because untrusted user input data is used to determine the path of the file. So, if the user sets the path to something like `../.env`, the user may be able to overwrite your `.env` file depending on the permissions of the file and the default storage driver.
 
 Other examples of vulnerable code include:
 
 ```php
-use Illuminate\Filesystem\Filesystem;
-use Illuminate\Support\Facades\Storage;
-
-response()->file($request->input('path').'.xml');
-file_get_contents($request->post('path'));
-(new Filesystem())->get($request->input('path'));
-(new Filesystem())->copy($request->input('path'), 'sometarget');
-Storage::download($request->input('path'));
-Storage::get($request->input('path'));
+$request->file('avatar')->storeAs($request->input('path'), auth()->user()->id);
+Storage::putFile($request->input('path'), $request->file('somefile'));
 ```
 
 ## How To Fix
@@ -48,7 +42,7 @@ Storage::get($request->input('path'));
 The best way to fix this is to use the `basename` function, if the directory path is pre-determined (not variable):
 
 ```php
-response()->download(storage_path('somedirectory/').basename($request->input('filename')));
+Storage::put('somedir/'.basename($request->input('path')), $request->file('uploadFile'));
 ``` 
 
 ### Option 2: Validating Path Using Realpath
@@ -59,13 +53,13 @@ If the directory path can have sub-directories, you can use the `realpath` funct
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 
-public function downloadDocument(Request $request)
+public function uploadDocument(Request $request)
 {
     $path = realpath(storage_path('somedir/'.$request->input('path')));
     if (! Str::startsWith($path, storage_path())) {
         abort(403);
     }
-    return response()->download($path);
+    $request->file('avatar')->storeAs($path, auth()->user()->id);    
 }
 ``` 
 
@@ -78,14 +72,15 @@ public function downloadDocument(Request $request)
 For even more security, you may set the `doc_root` and `open_basedir` PHP configuration settings to your application root directory. This limits the files that can be accessed by PHP to the specified directory. Be sure to check out the PHP documentation on these configuration settings (listed below in the references section).
 
 ::: danger
-Using `open_basedir` will disable the realpath cache. This may adversely impact your application performance. 
+Using `open_basedir` will disable the realpath cache. This may adversely impact your application performance.
 :::
 
 ## Related Analyzers
 
-- [Unrestricted File Upload Analyzer](unrestricted-file-upload-analyzer.html)
+- [Directory Traversal Analyzer](directory-traversal-analyzer.html)
 
 ## References
 
-- [OWASP Directory Traversal Introduction](https://owasp.org/www-community/attacks/Path_Traversal)
+- [OWASP Guide on Unrestricted File Uploads](https://owasp.org/www-community/vulnerabilities/Unrestricted_File_Upload)
+- [OWASP File Upload Cheatsheet](https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html)
 - [PHP Documentation on Configuration Directives](https://www.php.net/manual/en/ini.core.php#ini.doc-root)

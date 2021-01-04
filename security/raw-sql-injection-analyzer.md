@@ -54,6 +54,10 @@ use App\Models\Book;
 Book::whereRaw('author = :author', ['author' => $request->input('author')]);
 ```
 
+## Related Analyzers
+
+- [SQL Injection Analyzer](sql-injection-analyzer.html)
+- [Validation SQL Injection Analyzer](validation-sql-injection-analyzer.html)
 
 ## References
 
