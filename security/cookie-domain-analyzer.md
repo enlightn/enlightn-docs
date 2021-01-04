@@ -12,7 +12,7 @@ pro: true
 
 The cookie `domain` attribute specifies which hosts are allowed to receive the cookie. If not specified, it defaults to the same origin that set the cookie, excluding subdomains.
 
-This analyzer confirms that your session cookie `domain` attribute is set to null if you do not have subdomain route registrations.
+This analyzer confirms that your session cookie `domain` attribute (this is also the default for all cookies) is set to null if you do not have subdomain route registrations.
 
 If a domain attribute is specified, then subdomains are always included, potentially making your application less secure.
 
@@ -38,6 +38,12 @@ Simply set your `domain` configuration option in your `config/session.php` file 
 ## Skip Condition
 
 This analyzer is skipped if there are route registrations that relate to more than one unique domain or sub-domain in your application.
+
+## Related Analyzers
+
+- [Http Only Cookie Analyzer](http-only-cookie-analyzer.html)
+- [Same Site Cookie Analyzer](same-site-cookie-analyzer.html)
+- [Secure Cookie Analyzer](secure-cookie-analyzer.html)
 
 ## References
 

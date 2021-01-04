@@ -12,6 +12,8 @@ This analyzer confirms that your session cookie sets the `HttpOnly` attribute.
 
 If this is not enabled, it may expose your application to cross-site scripting (XSS) attacks. Unless, you have a very specific use case to require session cookies to be accessed from Javascript, it is recommended to enable this option.
 
+Note that the default value of `HttpOnly` for all cookies is `true` and the `http_only` configuration option in your `config/session.php` only sets this attribute for the session cookie and not for the other cookies in your application.
+
 ## How To Fix
 
 Simply set the `http_only` attribute in your `config/session.php` file to true:
@@ -33,6 +35,12 @@ Simply set the `http_only` attribute in your `config/session.php` file to true:
 ## Skip Condition
 
 This analyzer is skipped if your app is stateless (does not use sessions).
+
+## Related Analyzers
+
+- [Cookie Domain Analyzer](cookie-domain-analyzer.html)
+- [Same Site Cookie Analyzer](same-site-cookie-analyzer.html)
+- [Secure Cookie Analyzer](secure-cookie-analyzer.html)
 
 ## References
 
