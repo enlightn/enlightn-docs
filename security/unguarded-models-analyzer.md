@@ -1,4 +1,4 @@
-## Unguarded Models Analyzer
+# Unguarded Models Analyzer
 
 | Category       | Severity   | Time To Fix  |
 | -------------  |:----------:| ------------:|
