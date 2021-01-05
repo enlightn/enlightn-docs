@@ -159,7 +159,12 @@ module.exports = {
                 '/reliability/invalid-import-analyzer',
                 '/reliability/invalid-method-call-analyzer',
                 '/reliability/invalid-method-override-analyzer',
+                '/reliability/invalid-property-access-analyzer',
                 '/reliability/invalid-offset-analyzer',
+                '/reliability/invalid-return-type-analyzer',
+                '/reliability/maintenance-mode-analyzer',
+                '/reliability/missing-return-statement-analyzer',
+                '/reliability/queue-timeout-analyzer'
             ],
             collapsable: true,
             sidebarDepth: 0,
