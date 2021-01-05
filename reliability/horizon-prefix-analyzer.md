@@ -67,6 +67,7 @@ This analyzer is skipped if your application does not use Horizon.
 ## Related Analyzers
 
 - [Cache Prefix Analyzer](cache-prefix-analyzer.html)
+- [Redis Prefix Analyzer](redis-prefix-analyzer.html)
 
 ## References
 

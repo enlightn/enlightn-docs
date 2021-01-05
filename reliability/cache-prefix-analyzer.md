@@ -38,6 +38,7 @@ If you use Redis, it is also a good practice to use separate Redis cache databas
 ## Related Analyzers
 
 - [Horizon Prefix Analyzer](horizon-prefix-analyzer.html)
+- [Redis Prefix Analyzer](redis-prefix-analyzer.html)
 
 ## References
 
