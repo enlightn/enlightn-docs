@@ -164,7 +164,11 @@ module.exports = {
                 '/reliability/invalid-return-type-analyzer',
                 '/reliability/maintenance-mode-analyzer',
                 '/reliability/missing-return-statement-analyzer',
-                '/reliability/queue-timeout-analyzer'
+                '/reliability/queue-timeout-analyzer',
+                '/reliability/undefined-constant-analyzer',
+                '/reliability/undefined-variable-analyzer',
+                '/reliability/unset-analyzer',
+                '/reliability/up-to-date-migrations-analyzer'
             ],
             collapsable: true,
             sidebarDepth: 0,
