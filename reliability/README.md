@@ -1,6 +1,6 @@
 # Reliability
 
-Enlightn has 41 automated reliability checks (including 24 Enlightn Pro checks).
+Enlightn has 41 automated reliability checks (including 17 Enlightn Pro checks).
 
 ## 🧐 Code Reliability and Bug Detection
 
@@ -12,7 +12,7 @@ Enlightn has 41 automated reliability checks (including 24 Enlightn Pro checks).
 - [Invalid Offset](invalid-offset-analyzer.html)
 - [Invalid Property Access](invalid-property-access-analyzer.html)
 - [Invalid Return Type](invalid-return-type-analyzer.html)
-- [Invalid Unset](invalid-unset-analyzer.html)
+- [Invalid Unset](unset-analyzer.html)
 - [Missing Return Statement](missing-return-statement-analyzer.html)
 - [Undefined Constant](undefined-constant-analyzer.html)
 - [Undefined Variable](undefined-variable-analyzer.html)
