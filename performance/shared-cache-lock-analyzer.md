@@ -58,4 +58,4 @@ This analyzer is skipped if your application does not use Redis as its default c
 
 ## References
 
-- [Laravel Documentation for Atomic Locks](https://laravel.com/docs/cache#atomic-locks)
+- [Laravel Documentation on Atomic Locks](https://laravel.com/docs/cache#atomic-locks)

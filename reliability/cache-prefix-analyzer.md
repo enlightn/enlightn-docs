@@ -35,6 +35,10 @@ To avoid a collision with other applications that share the same cache servers, 
 
 If you use Redis, it is also a good practice to use separate Redis cache databases when sharing the same Redis cache servers.
 
+## Related Analyzers
+
+- [Horizon Prefix Analyzer](horizon-prefix-analyzer.html)
+
 ## References
 
 - [Laravel Caching Documentation](https://laravel.com/docs/cache)

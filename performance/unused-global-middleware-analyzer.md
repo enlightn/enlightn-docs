@@ -16,5 +16,5 @@ This analyzer checks to see if there are any "unused" global middleware classes 
 
 ## References
 
-- [Laravel Documentation for CORS](https://laravel.com/docs/routing#cors)
-- [Laravel Documentation for Trusted Proxies](https://laravel.com/docs/requests#configuring-trusted-proxies)
+- [Laravel Documentation on CORS](https://laravel.com/docs/routing#cors)
+- [Laravel Documentation on Trusted Proxies](https://laravel.com/docs/requests#configuring-trusted-proxies)
