@@ -45,5 +45,6 @@ As above, the timeout is explicitly defined as 90 seconds, so your retry after v
 
 ## References
 
-- [Laravel Documentation on Queues](https://laravel.com/docs/queues#job-expiration)
+- [Error When Timeout Is Not Configured Properly](https://divinglaravel.com/integrity-constraint-violation-duplicate-entry-for-key-failed_jobs_uuid_unique)
+- [Laravel Documentation on Job Expiration](https://laravel.com/docs/queues#worker-timeouts)
 - [Laravel Horizon Documentation on Configuration](https://laravel.com/docs/horizon#configuration)
