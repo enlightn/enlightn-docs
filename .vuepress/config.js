@@ -15,15 +15,9 @@ module.exports = {
     // Add GA4 snippet to head tag.
     ['script', {
         async: true,
-        src: 'https://www.googletagmanager.com/gtag/js?id=G-0RKB1N2VJK'
+        src: 'https://www.googletagmanager.com/gtag/js?id=UA-186721653-2'
     }],
-    ['script', {}, `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-0RKB1N2VJK');
-    `]
+    ['script', {}, "window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-186721653-2');"]
   ],
 
   /**
