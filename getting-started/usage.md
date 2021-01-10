@@ -14,7 +14,7 @@ php artisan enlightn
 
 All checks that fail will include a description of why they failed along with the associated lines of code (if applicable).
 
-<img :src="$withBase('/images/timeout.png')" alt="Failed Check" />
+<img :src="$withBase('/images/queue-timeout.png')" alt="Failed Check" />
 
 ## Report Card
 

@@ -43,7 +43,9 @@ module.exports = {
             children: [
                 '/getting-started/installation',
                 '/getting-started/configuration',
-                '/getting-started/usage'
+                '/getting-started/usage',
+                '/getting-started/contribution-guide',
+                '/getting-started/support'
             ]
         },
         {

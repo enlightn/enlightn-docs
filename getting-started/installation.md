@@ -29,33 +29,41 @@ If you are installing Enlightn Pro, you do not need to install Enlightn and you 
 
 ## Installing Enlightn Pro
 
-Once you have purchased an Enlightn Pro license, you may download a release from the "releases" section of the [Enlightn website](https://www.laravel-enlightn.com). After downloading a Zip file containing the Enlightn Pro source code, you will need to install it as a Composer "path" repository within your Laravel application's composer.json file.
-
-First, unzip the contents of the Enlightn Pro release into a `enlightnpro` directory within your application's root directory. Once you have unzipped and placed the Enlightn Pro source code within the appropriate directory, you are ready to update your composer.json file. You should add the following configuration to the file:
+Once you have purchased an Enlightn Pro license, add the `satis.laravel-enlightn.com` repository in your `composer.json` file:
 
 ```json
 "repositories": [
     {
-        "type": "path",
-        "url": "./enlightnpro"
+        "type": "composer",
+        "url": "https://satis.laravel-enlightn.com"
     }
 ],
 ```
 
-Next, add `enlightn/enlightnpro` to the require section of your composer.json file:
-
-```json
-"require": {
-    "php": "^7.2.5",
-    "laravel/framework": "^8.0",
-    "enlightn/enlightnpro": "*"
-},
-```
-
-After your `composer.json` file has been updated, run the `composer update` command in your console terminal:
+Next, create an `auth.json` file (if not already created) and place it either next to your `composer.json` file in your application, or in the Composer home directory. You may determine the Composer home directory on Unix machines using the following command:
 
 ```bash
-composer update
+composer config --list --global | grep "\[home\]"
+```
+
+Next, add the following to your `auth.json` file:
+
+```json
+{
+    "http-basic": {
+        "satis.laravel-enlightn.com": {
+            "username": "<your Laravel Enlightn account email here>",
+            "password": "<your API token here>"
+        }
+    }
+}
+```
+You can copy your API token by logging into the Laravel Enlightn website and visiting the "Profile" section.
+
+Next, install the package using the Composer `require` command:
+
+```bash
+composer require enlightn/enlightnpro
 ```
 
 :::tip Package Stability
@@ -86,7 +94,7 @@ php artisan vendor:publish --tag=enlightn
 To do so for Enlightn Pro (after you have updated the `repositories` entry in your composer.json based on the Enlightn Pro installation instructions above):
 
 ```bash
-composer require enlightn/enlightnpro:"*" --dev
+composer require enlightn/enlightnpro --dev
 
 php artisan vendor:publish --tag=enlightnpro
 ```
