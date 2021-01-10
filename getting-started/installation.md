@@ -103,4 +103,4 @@ php artisan vendor:publish --tag=enlightnpro
 
 Enlightn Pro's license does not allow the public distribution of its source code. So, you may not build an application using Enlightn Pro and distribute that application public via open source repository hosting platforms or any other code distribution platform.
 
-If you would like to develop a third party package that augments Enlightn Pro's functionality, you are free to do so. However, you may not distribute the Nova source code along with your package.
+If you would like to develop a third party package that augments Enlightn Pro's functionality, you are free to do so. However, you may not distribute the Enlightn Pro source code along with your package.
