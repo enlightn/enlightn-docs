@@ -10,6 +10,14 @@ php artisan enlightn
 
 <img :src="$withBase('/images/terminal.png')" alt="Enlightn Terminal" />
 
+If you wish to run specific analyzer classes, you may specify them as optional arguments:
+
+```bash
+php artisan enlightn Enlightn\\Enlightn\\Analyzers\\Security\\CSRFAnalyzer Enlightn\\EnlightnPro\\Analyzers\\Security\\DirectoryTraversalAnalyzer
+```
+
+Note that the class names should be fully qualified and escaped with double slashes as above.
+
 ## Failed Checks
 
 All checks that fail will include a description of why they failed along with the associated lines of code (if applicable).
