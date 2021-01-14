@@ -8,7 +8,7 @@
 
 This analyzer confirms that your application has a valid `composer.json` and `composer.lock` file.
 
-Under the hood, this analyzer uses the `composer validate`[https://getcomposer.org/doc/03-cli.md#validate] CLI command.
+Under the hood, this analyzer uses the [composer validate](https://getcomposer.org/doc/03-cli.md#validate) CLI command.
 
 ## How To Fix
 
