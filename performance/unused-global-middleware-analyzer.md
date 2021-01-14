@@ -14,6 +14,10 @@ This analyzer checks to see if there are any "unused" global middleware classes 
 2. TrustProxies: If your application does not configure trusted proxies (using the `trustedproxy.proxies` configuration), then this middleware is flagged as unused.
 3. TrustHosts: If your application does not use setup trusted proxies, then you do not need to setup trusted hosts either and this middleware is flagged as unused.
 
+## How To Fix
+
+To fix this issue, simply remove all the unused global middleware from your `App\Http\Kernel` class.
+
 ## References
 
 - [Laravel Documentation on CORS](https://laravel.com/docs/routing#cors)
