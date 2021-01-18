@@ -77,27 +77,15 @@ Finally, run the the vendor:publish Artisan command to publish the Enlightn Pro 
 php artisan vendor:publish --tag=enlightnpro
 ```
 
-## Local Only Installation
+## Run At Least Once In Production
+
+If you truly want to get amazing recommendations from Enlightn, it is recommended that you at least run Enlightn once in production.
+
+Several of Enlightn's checks are environment specific. So, some tests that pass in your local environment, can fail in production. For instance, it is recommended to cache your routes in production but doing so in local is not recommended. 
 
 Enlightn is meant to be used in all environments as it does not include any overhead. Unlike other packages that record queries or events, Enlightn does not include any additional processing while your application runs. The only time any analysis takes place is when you run the `enlightn` Artisan command.
 
-To get the most out of Enlightn, we would recommend you install Enlightn in both your production and development environment. In fact, some checks are specific to your application environment. For instance, your routes should only be cached in production and should not be cached in a development environment.
-
-Of course, if you wish to only use Enlightn to assist your local development, you may install it using the `--dev` flag for Enlightn:
-
-```bash
-composer require enlightn/enlightn --dev
-
-php artisan vendor:publish --tag=enlightn
-```
-
-To do so for Enlightn Pro (after you have updated the `repositories` entry in your composer.json based on the Enlightn Pro installation instructions above):
-
-```bash
-composer require enlightn/enlightnpro --dev
-
-php artisan vendor:publish --tag=enlightnpro
-```
+In case you do not want to or cannot run Enlightn on production, you can set your `APP_ENV` variable to `production` on your local machine, run your deployment script and then run Enlightn. While this will miss out on server configurations, it will ensure that your deployment script contains the recommended performance enhancements for a production environment.
 
 ## Enlightn Pro Code Distribution
 
