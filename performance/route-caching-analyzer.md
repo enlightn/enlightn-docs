@@ -13,7 +13,7 @@ This analyzer ensures that:
 
 If your routes are cached in local, any changes that you make to your route files will not be reflected in your application. This is why it is not recommended to cache your routes in a local environment.
 
-In production environments, it is recommended to cache your routes. This allows for a significant boost of upto 5X!
+In production environments, it is recommended to cache your routes. This allows for a **significant boost of upto 5X**!
 
 ## How To Cache Your Routes
 

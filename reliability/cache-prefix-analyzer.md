@@ -10,8 +10,8 @@
 
 Some examples where the collision can create issues are as follows:
 
-1. Queueing system: For instance, a `queue:restart` on any one of the shared applications will restart queue workers of all applications and a `horizon:terminate` may terminate Horizon running on all shared applications.
-2. Rate limiting: Named rate limiters with the same name will share counts between the applications.
+1. Queueing system: For instance, a `queue:restart` on any one of the shared applications (that share the same cache servers) will restart queue workers of all applications and a `horizon:terminate` may terminate Horizon running on all applications that share the same cache server.
+2. Rate limiting: Named rate limiters with the same name will share counts between the applications. So, for example it may happen that when you rate limit user ID 1 on application #1, it may actually also limit user ID 1 on application #2 that shares your same cache server.
 3. Unique Job Locks: Unique job locks will be shared across applications if jobs have the same class name.
 
 ## How To Fix

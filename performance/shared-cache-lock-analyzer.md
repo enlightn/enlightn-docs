@@ -8,9 +8,11 @@
 
 [Atomic locks](https://laravel.com/docs/cache#atomic-locks) is a mechanism provided by Laravel to manage race conditions and concurrency. If your application uses the `redis` cache driver, you must be careful not to use the same cache connection for locks as you do for your caching.
 
-Cache data is meant to be temporary and it is quite a common deployment step to clear your cache. If your locks and cache reside on the same Redis connection, when you clear your cache, your locks will also be cleared. You may be using locks either directly in your application or by using [Unique Jobs](https://laravel.com/docs/queues#unique-jobs) or [Session Blocking](https://laravel.com/docs/session#session-blocking).
+Cache data is meant to be temporary and it is quite a common deployment step to clear your cache. If your locks and cache reside on the same Redis connection, when you clear your cache, your locks will also be cleared.
 
-If you are using any of the above features, it is recommended to separate your cache and lock Redis connections with separate databases.
+Remember that even though your application may not be using atomic locks directly, Laravel uses atomic locks for [Unique Jobs](https://laravel.com/docs/queues#unique-jobs) or [Session Blocking](https://laravel.com/docs/session#session-blocking).
+
+If you are using any of the above features, it is recommended to separate your cache and lock Redis connections with separate databases to avoid clearing your locks when clearing cache data.
 
 ## How To Separate Lock and Cache Redis Databases
 

@@ -6,7 +6,9 @@
 
 ## Introduction
 
-Choosing the right cache driver can make a major impact to the performance of your application. While making this choice, it is important for you to understand the differences between the major drivers:
+Choosing the right cache driver can make a major impact to the performance of your application. While making this choice, it is important for you to understand the differences between the major drivers.
+
+Remember that even if you are not using caching directly in your application, the Laravel framework still uses caching for rate limiting, unique job locks and its queueing system.
 
 | Driver    | Suitable For | Supports Multiple Servers  | Efficient  | Supports Locks | Comments |
 | :-------- | :----------- | :-------------------------:|:----------:|:---------------:|:---------|

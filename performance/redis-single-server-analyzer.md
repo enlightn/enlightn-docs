@@ -10,7 +10,9 @@ pro: true
 
 ## Introduction
 
-If your Redis service is running on your web server, it is highly recommended that you use Unix sockets to communicate with your web server. Based on the Redis official benchmark, you can improve performance by upto 50% using unix sockets on Redis.
+If your Redis service is running on your web server, it is highly recommended that you use **Unix sockets** instead of **TCP ports** to communicate with your web server.
+
+Based on the Redis official benchmark, you can **improve performance by upto 50%** using unix sockets (versus TCP ports) on Redis.
 
 Of course, unix sockets can only be used if both your Laravel application and Redis are running on the same server.
 

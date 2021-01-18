@@ -6,7 +6,10 @@
 
 ## Introduction
 
-Choosing the right queue driver can make a major impact to the performance of your application. While making this choice, it is important for you to understand the differences between the major drivers:
+Choosing the right queue driver can make a major impact to the performance of your application. While making this choice, it is important for you to understand the differences between the major drivers.
+
+Remember that even if you do not use queueable jobs directly in your application, queues can improve performance (faster response times) for your application via queueable mails, notifications and events as well.
+
 
 | Driver    | Suitable For | Supports Multiple Servers  | Deadlock Issues | Comments |
 | :-------- | :----------- | :-------------------------:|:---------------:|:---------|

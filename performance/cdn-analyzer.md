@@ -19,7 +19,9 @@ A CDN can significantly improve performance and provides the following benefits:
 3. Most CDNs also offer DDoS protection.
 4. CDNs often provide analytics and insights on asset popularity, load statistics and more out of the box. 
 
-Some popular CDNs include Cloudflare, AWS Cloudfront and Azure CDN. Do check them out if you are interested in boosting asset serving performance on your application.
+Some popular CDNs include Cloudflare, AWS Cloudfront and Azure CDN. Do check them out if you are interested in boosting asset serving performance on your application. 
+
+Some CDNs are free to use for a certain usage threshold.
 
 ## Skip Condition
 
