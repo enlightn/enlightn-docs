@@ -18,6 +18,8 @@ php artisan enlightn Enlightn\\Enlightn\\Analyzers\\Security\\CSRFAnalyzer Enlig
 
 Note that the class names should be fully qualified and escaped with double slashes as above.
 
+The `enlightn` command will return a `0` status code for success and a `1` status code if any of the analyzers fail. This may be useful if you wish to integrate Enlightn with your CI/CD tool.
+
 ## Run At Least Once In Production
 
 If you truly want to get amazing recommendations from Enlightn, it is recommended that you at least run Enlightn once in production.

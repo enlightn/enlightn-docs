@@ -32,6 +32,10 @@ Note that the header above is just an example. Make sure to read the content sec
 If you miss certain sources, it may mean that some of your JS scripts or CSS styles may not apply properly. Make sure to open the Developer Console in your browser to confirm there are no errors after your configuration is complete. 
 :::
 
+## Skip Condition
+
+This analyzer is skipped for local environments (if the `skip_env_specific` configuration option is set to true) or if your app is stateless (does not use the `StartSession` middleware).
+
 ## References
 
 - [Introduction to the Content-Security-Policy Header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy)

@@ -48,7 +48,7 @@ By default, this analyzer looks for a named route called `login` to inspect the 
 
 ## Skip Condition
 
-This analyzer is skipped if your app is not HTTPS only (verified by the `session.secure` configuration option).
+This analyzer is skipped if your app is not HTTPS only (verified by the APP URL or the `session.secure` configuration option).
 
 ## References
 
