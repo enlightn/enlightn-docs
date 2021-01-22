@@ -8,9 +8,9 @@
 
 If your MySQL database is running on your web server, it is highly recommended that you use **Unix sockets** instead of **TCP ports** to communicate with your web server. 
 
-Based on Percona's benchmark, you can **improve performance by upto 50%** using unix sockets (versus TCP portson MySQL.
+Based on Percona's benchmark, you can **improve performance by up to 50%** using Unix sockets (versus TCP ports) on MySQL.
 
-Of course, unix sockets can only be used if both your Laravel application and database are running on the same server.
+Of course, Unix sockets can only be used if both your Laravel application and database are running on the same server.
 
 ## How To Enable Unix Sockets
 
