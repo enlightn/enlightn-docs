@@ -57,6 +57,20 @@ By default, Enlightn does not exclude environment specific checks for such scena
 'skip_env_specific' => true,
 ```
 
+## Excluding Analyzers From Reporting
+
+When you run the `enlightn` Artisan command, the exit status code will be `0` if all checks passed. This can be useful if you intend to run Enlightn in your CI/CD pipeline.
+
+Additionally, if you wish to exclude some analyzers from counting towards the status code, you may use the `dont_report` configuration option:
+
+```php
+'dont_report' => [\Enlightn\Enlightn\Analyzers\Security\XSSAnalyzer::class],
+```
+
+This means that even if the XSS analyzer fails, it will not result in a non-zero exit status code unless there are other analyzers that also failed.
+
+Note that this does not mean that these analyzers won't run. They will still run and be displayed in the output of the `enlightn` command. If you wish to exclude them from the analysis, you should use the `exclude_analyzers` configuration option instead.
+
 ## Analyzer Specific Configuration Options
 
 There are some configuration options that are specific to certain analyzers. To learn more, you may refer the documentation for the specific analyzers, which will include the analyzer configuration options (if any).
