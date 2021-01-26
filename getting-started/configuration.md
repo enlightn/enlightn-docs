@@ -71,6 +71,18 @@ This means that even if the XSS analyzer fails, it will not result in a non-zero
 
 Note that this does not mean that these analyzers won't run. They will still run and be displayed in the output of the `enlightn` command. If you wish to exclude them from the analysis, you should use the `exclude_analyzers` configuration option instead.
 
+## Compact Lines
+
+By default, the `enlightn` Artisan command restricts the maximum number of files displayed to avoid cluttered output.
+
+<img :src="$withBase('/images/compact_lines.png')" alt="Compact Lines" />
+
+If you wish to display all the files for all checks, you may set the `compact_lines` configuration option to false:
+
+```php
+'compact_lines' => false,
+```
+
 ## Analyzer Specific Configuration Options
 
 There are some configuration options that are specific to certain analyzers. To learn more, you may refer the documentation for the specific analyzers, which will include the analyzer configuration options (if any).
