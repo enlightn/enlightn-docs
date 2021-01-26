@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | Major      | 5 minutes    |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Security\HSTSHeaderAnalyzer`
+
 ## Introduction
 
 So many applications today are HTTPS only. Besides the obvious security and trust benefits, HTTPS also boosts your SEO ranking.

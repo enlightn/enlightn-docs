@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | Minor      | 5 minutes   |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Security\HardCodedCredentialsAnalyzer`
+
 ## Introduction
 
 This analyzer scans your application code to detect hard coded credentials in your source code.

@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | :white_check_mark: Reliability | Major     | 5 minutes    |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Reliability\InvalidReturnTypeAnalyzer`
+
 ## Introduction
 
 This analyzer scans your application code to ensure that the return type of your methods and functions match their signature.

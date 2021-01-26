@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | Minor      | 5 minutes   |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Security\TelescopeSecurityAnalyzer`
+
 ## Introduction
 
 This analyzer checks whether you are running Telescope on a separate subdomain or not.

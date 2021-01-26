@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | :white_check_mark: Reliability | Major     | 5 minutes    |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Reliability\MissingReturnStatementAnalyzer`
+
 ## Introduction
 
 This analyzer scans your application code to ensure that your code does not have any missing return statements.

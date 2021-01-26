@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | :white_check_mark: Reliability | Major | 5 minutes   |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Reliability\StorageLinkAnalyzer`
+
 ## Introduction
 
 This analyzer confirms that your application's symbolic links have been created.

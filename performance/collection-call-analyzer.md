@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | :rocket: Performance | Major | 10 minutes   |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Performance\CollectionCallAnalyzer`
+
 ## Introduction
 
 This analyzer conducts a static analysis on your application code to check if you have any calls to a Laravel collection that could have been handled at the query level instead. This reduces heavy queries on the database and prevents unnecessary loops over collections. Some examples of such calls are:

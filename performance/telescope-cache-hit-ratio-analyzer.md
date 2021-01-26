@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | :rocket: Performance | Major | 30 minutes  |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Performance\TelescopeCacheHitRatioAnalyzer`
+
 ## Introduction
 
 This analyzer calculates your cache hit ratio based on Laravel Telescope's recorded hits and misses. Cache hit ratio means the percentage of successful reads (hits) out of all read operations. Mathematically, it is defined as 

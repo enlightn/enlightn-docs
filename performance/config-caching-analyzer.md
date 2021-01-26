@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | :rocket: Performance | Minor | 5 minutes   |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Performance\ConfigCachingAnalyzer`
+
 ## Introduction
 
 This analyzer ensures that:

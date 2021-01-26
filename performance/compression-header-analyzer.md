@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | :rocket: Performance | Major | 30 minutes  |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Performance\CompressionHeaderAnalyzer`
+
 ## Introduction
 
 This analyzer checks to see if your application uses appropriate compression headers on your JS and CSS asset files.

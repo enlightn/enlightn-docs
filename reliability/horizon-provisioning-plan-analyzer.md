@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | :white_check_mark: Reliability | ⚠️ Critical | 10 minutes   |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Reliability\HorizonProvisioningPlanAnalyzer`
+
 ## Introduction
 
 This analyzer confirms that you have a Horizon provisioning plan configured for your application's current environment.

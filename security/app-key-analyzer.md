@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | ⚠️ Critical | 1 minute     |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Security\AppKeyAnalyzer`
+
 ## Introduction
 
 This analyzer confirms that your application key and cipher are set.

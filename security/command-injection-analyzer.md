@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | Major      | 5 minutes    |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Security\CommandInjectionAnalyzer`
+
 ## Introduction
 
 This analyzer scans your application code for possible command injection vulnerabilities.

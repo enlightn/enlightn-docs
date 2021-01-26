@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | Major      | 5 minutes    |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Security\PHPIniAnalyzer`
+
 ## Introduction
 
 This analyzer checks whether your PHP configuration is secure.

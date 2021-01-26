@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | ⚠️ Critical | 5 minutes    |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Security\EncryptedCookiesAnalyzer`
+
 ## Introduction
 
 This analyzer confirms whether your application encrypts its cookies. 

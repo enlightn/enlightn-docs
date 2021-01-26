@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | :white_check_mark: Reliability | Major     | 5 minutes    |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Reliability\ForeachIterableAnalyzer`
+
 ## Introduction
 
 This analyzer scans your application code to ensure that you are not iterating over non-iterable types.

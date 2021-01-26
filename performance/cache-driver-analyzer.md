@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | :rocket: Performance | Major | 1 hour       |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Performance\CacheDriverAnalyzer`
+
 ## Introduction
 
 Choosing the right cache driver can make a major impact to the performance of your application. While making this choice, it is important for you to understand the differences between the major drivers.

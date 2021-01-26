@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | :rocket: Performance | Major | 5 minutes   |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Performance\RouteCachingAnalyzer`
+
 ## Introduction
 
 This analyzer ensures that:

@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | :white_check_mark: Reliability | Major | 2 minutes   |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Reliability\RedisSharedDatabaseAnalyzer`
+
 ## Introduction
 
 This analyzer detects whether your Redis cache database is shared with other services such as queues, sessions or broadcasting.

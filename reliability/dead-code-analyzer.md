@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | :white_check_mark: Reliability | Minor | 10 minutes  |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Reliability\DeadCodeAnalyzer`
+
 ## Introduction
 
 This analyzer scans your application source for any unreachable or dead code.

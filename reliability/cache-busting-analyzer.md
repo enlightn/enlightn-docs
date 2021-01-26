@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | :white_check_mark: Reliability | Major | 5 minutes   |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Reliability\CacheBustingAnalyzer`
+
 ## Introduction
 
 This analyzer confirms that your application uses cache busting for your assets.

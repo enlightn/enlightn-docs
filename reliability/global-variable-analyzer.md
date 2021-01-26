@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | :white_check_mark: Reliability | Minor | 10 minutes  |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Reliability\GlobalVariableAnalyzer`
+
 ## Introduction
 
 This analyzer confirms that your application does not use PHP global variables or functions.

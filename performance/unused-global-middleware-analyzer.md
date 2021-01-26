@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | :rocket: Performance | Minor | 5 minutes  |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Performance\UnusedGlobalMiddlewareAnalyzer`
+
 ## Introduction
 
 Laravel has almost everything built-in. But sometimes, we fall into the trap of just using the Laravel skeleton code rather than cleaning it up for your specific application.

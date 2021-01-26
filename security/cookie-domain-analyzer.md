@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | Minor      | 1 minute     |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Security\CookieDomainAnalyzer`
+
 ## Introduction
 
 The cookie `domain` attribute specifies which hosts are allowed to receive the cookie. If not specified, it defaults to the same origin that set the cookie, excluding subdomains.

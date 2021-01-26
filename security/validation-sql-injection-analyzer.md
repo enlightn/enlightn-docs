@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | ⚠️ Critical | 10 minutes   |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Security\ValidationSQLInjectionAnalyzer`
+
 ## Introduction
 
 This analyzer scans your application code to detect possible validation rule SQL injection vulnerabilities.

@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | ⚠️ Critical | 10 minutes   |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Security\FillableForeignKeyAnalyzer`
+
 ## Introduction
 
 This analyzer confirms that your application does not have any "fillable" foreign keys to protect against mass assignment.

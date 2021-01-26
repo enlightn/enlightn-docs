@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | ⚠️ Critical | 10 minutes   |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Security\MassAssignmentAnalyzer`
+
 ## Introduction
 
 This analyzer scans your application code for potential mass assignment vulnerabilities. Mass assignment is a vulnerability where an ORM pattern in a web application is abused to modify data items that the user should not be allowed to access.

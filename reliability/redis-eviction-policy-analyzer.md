@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | :white_check_mark: Reliability | Major     | 10 minutes  |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Reliability\RedisEvictionPolicyAnalyzer`
+
 ## Introduction
 
 This analyzer confirms that an appropriate eviction policy is set on your Redis servers. The eviction policy defines the methodology that Redis uses when the database exceeds the memory limit.

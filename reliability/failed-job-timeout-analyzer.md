@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | :white_check_mark: Reliability | Major | 5 minutes   |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Reliability\FailedJobTimeoutAnalyzer`
+
 ## Introduction
 
 This analyzer checks to see whether any of your jobs are timing out and unable to complete processing.

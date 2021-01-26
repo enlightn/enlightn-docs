@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | ⚠️ Critical | 30 minutes   |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Security\SqlInjectionAnalyzer`
+
 ## Introduction
 
 This analyzer scans your application code to detect any native PHP database code such as:

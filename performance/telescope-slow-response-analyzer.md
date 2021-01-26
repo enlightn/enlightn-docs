@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | :rocket: Performance | Major | 30 minutes  |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Performance\TelescopeSlowResponseAnalyzer`
+
 ## Introduction
 
 This analyzer scans your Telescope records to detect routes that have slow responses.

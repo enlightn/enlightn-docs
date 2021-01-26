@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | Major      | 5 minutes    |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Security\CSRFAnalyzer`
+
 ## Introduction
 
 This analyzer checks for any routes (with the POST, PUT, PATCH or DELETE methods) that are un-protected against Cross Site Request Forgery (CSRF) attacks.

@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | Major      | 5 minutes    |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Security\XSSAnalyzer`
+
 ## Introduction
 
 This analyzer checks whether your application sets an appropriate `Content-Security-Policy` header to protect against XSS attacks.

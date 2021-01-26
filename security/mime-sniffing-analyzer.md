@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | Major      | 5 minutes   |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Security\MimeSniffingAnalyzer`
+
 ## Introduction
 
 This analyzer detects whether your application sets the `X-Content-Type-Options` header. This header tells browsers to not ignore explicitly defined content types and helps prevent MIME sniffing attacks.

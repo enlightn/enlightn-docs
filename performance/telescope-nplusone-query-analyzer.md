@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | :rocket: Performance | Major | 30 minutes  |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Performance\TelescopeNPlusOneQueryAnalyzer`
+
 ## Introduction
 
 This analyzer scans your Telescope records to detect N+1 queries along with the lines of code that are responsible for these queries.

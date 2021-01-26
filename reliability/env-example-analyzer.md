@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | :white_check_mark: Reliability | Minor | 10 minutes  |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Reliability\EnvExampleAnalyzer`
+
 ## Introduction
 
 This analyzer confirms that all your env variables defined in your `.env` file are also defined in your `.env.example` file.

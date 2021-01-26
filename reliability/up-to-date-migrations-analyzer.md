@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | :white_check_mark: Reliability | Major     | 5 minutes    |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Reliability\UpToDateMigrationsAnalyzer`
+
 ## Introduction
 
 This analyzer ensures that there are no pending migrations in your application.

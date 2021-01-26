@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | Major      | 5 minutes    |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Security\LoginThrottlingAnalyzer`
+
 ## Introduction
 
 This analyzer ensures that your application uses login throttling for protection against brute force attacks.

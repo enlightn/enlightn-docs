@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | Minor      | 1 minute     |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Security\UpToDateDependencyAnalyzer`
+
 ## Introduction
 
 This analyzer confirms that your application's dependencies are up-to-date.

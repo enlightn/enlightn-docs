@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | :white_check_mark: Reliability | Minor | 10 minutes  |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Reliability\ComposerPackagePublishAnalyzer`
+
 ## Introduction
 
 This analyzer confirms that your application re-publishes package assets on update.

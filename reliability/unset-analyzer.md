@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | :white_check_mark: Reliability | Major     | 5 minutes    |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Reliability\UnsetAnalyzer`
+
 ## Introduction
 
 This analyzer scans your application code to ensure that your code does not try to unset undefined variables.

@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | :rocket: Performance | Minor | 30 minutes  |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Performance\CdnAnalyzer`
+
 ## Introduction
 
 This analyzer checks to see if your application is using a CDN while in production.

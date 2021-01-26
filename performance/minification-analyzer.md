@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | :rocket: Performance | Major | 5 minutes  |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Performance\MinificationAnalyzer`
+
 ## Introduction
 
 This analyzer searches for JS and CSS files within your public directory (configurable). If it finds any un-minified JS or CSS files within the public directory while your application is in a non-local environment, the result of the analysis is flagged as failed.

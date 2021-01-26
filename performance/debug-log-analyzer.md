@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | :rocket: Performance | Minor | 1 minute    |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Performance\DebugLogAnalyzer`
+
 ## Introduction
 
 This analyzer ensures that your log level is not set to debug while your application is in a non-local environment.

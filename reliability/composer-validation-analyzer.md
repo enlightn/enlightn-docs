@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | :white_check_mark: Reliability | ⚠️ Critical | 10 minutes   |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Reliability\ComposerValidationAnalyzer`
+
 ## Introduction
 
 This analyzer confirms that your application has a valid `composer.json` and `composer.lock` file.

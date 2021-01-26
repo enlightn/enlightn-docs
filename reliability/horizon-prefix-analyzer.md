@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | :white_check_mark: Reliability | Major | 1 minute    |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Reliability\HorizonPrefixAnalyzer`
+
 ## Introduction
 
 `laravel_horizon:` is the default Horizon Redis prefix for all Laravel applications. If you share the same Redis servers for multiple applications, this may result in a collision with other applications.

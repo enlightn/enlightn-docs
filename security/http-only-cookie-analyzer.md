@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | ⚠️ Critical | 1 minute     |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Security\HttpOnlyCookieAnalyzer`
+
 ## Introduction
 
 A cookie with an `HttpOnly` attribute is inaccessible from Javascript. The `http_only` configuration option in your `config/session.php` file determines whether your session cookie should set the `HttpOnly` attribute.

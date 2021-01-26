@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | Major      | 1 minute     |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Security\StableDependencyAnalyzer`
+
 ## Introduction
 
 This analyzer checks whether your application uses stable versions of dependencies.

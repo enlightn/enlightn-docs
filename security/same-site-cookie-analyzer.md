@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | ⚠️ Critical | 1 minute     |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Security\SameSiteCookieAnalyzer`
+
 ## Introduction
 
 This analyzer confirms that your application sets a secure 'SameSite' cookie attribute on your session cookies. Note that this is also the default value for all cookies in your application.

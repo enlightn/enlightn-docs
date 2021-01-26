@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | :white_check_mark: Reliability | Major     | 1 minute    |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Reliability\QueueBlockingAnalyzer`
+
 ## Introduction
 
 This analyzer confirms that your application does not set an invalid `block_for` configuration value in your `config/queue.php` file.

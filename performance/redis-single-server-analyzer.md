@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | :rocket: Performance | Major | 30 minutes  |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Performance\RedisSingleServerAnalyzer`
+
 ## Introduction
 
 If your Redis service is running on your web server, it is highly recommended that you use **Unix sockets** instead of **TCP ports** to communicate with your web server.

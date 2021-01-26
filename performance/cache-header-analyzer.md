@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | :rocket: Performance | Major | 15 minutes   |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Performance\CacheHeaderAnalyzer`
+
 ## Introduction
 
 This analyzer searches for your Laravel Mix manifest file and makes requests to all assets that are versioned on Laravel Mix. We assume that the versioned assets are the ones that safe to cache, and all other assets are dynamic or un-cacheable.

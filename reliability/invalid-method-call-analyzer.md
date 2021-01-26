@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | :white_check_mark: Reliability | Major     | 5 minutes    |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Reliability\InvalidMethodCallAnalyzer`
+
 ## Introduction
 
 This analyzer scans your application code to ensure that your code does not contain method calls that are either non-existent or do not match the method scope or signature.
