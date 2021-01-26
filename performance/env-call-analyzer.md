@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | :rocket: Performance | Major | 10 minutes  |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Performance\EnvCallAnalyzer`
+
 ## Introduction
 
 This analyzer ensures that your application code does not have calls to the `env` function outside of your `config` files. This is a major roadblock to configuration caching.

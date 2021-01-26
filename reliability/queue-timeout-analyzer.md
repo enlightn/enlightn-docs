@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | :white_check_mark: Reliability | ⚠️ Critical | 2 minutes    |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Reliability\QueueTimeoutAnalyzer`
+
 ## Introduction
 
 This analyzer ensures that your queue retry value is larger than your queue timeout configuration value.

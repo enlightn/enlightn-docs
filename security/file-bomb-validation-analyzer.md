@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | Minor      | 5 minutes   |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Security\FileBombValidationAnalyzer`
+
 ## Introduction
 
 This analyzer scans your application code to detect any input validations that allow for XML or ZIP files.

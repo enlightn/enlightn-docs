@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | :rocket: Performance | Minor | 10 minutes  |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Performance\CommandConstructorInjectionAnalyzer`
+
 ## Introduction
 
 Currently, all commands in Laravel are instantiated to be registered in the console application. So, it is considered to be a good practice to use dependency injection in the `handle` method of the command rather than using constructor injection. If you use constructor injection, all the dependencies of the commands will be loaded in memory, even if those commands are not required to run. This can be an issue for commands with big dependency graphs.

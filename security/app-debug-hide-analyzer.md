@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | ⚠️ Critical | 5 minutes    |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Security\AppDebugHideAnalyzer`
+
 ## Introduction
 
 This analyzer confirms whether your application hides sensitive environment variables while in debug mode and in a non-local environment.

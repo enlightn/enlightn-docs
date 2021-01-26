@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | :rocket: Performance | Minor | 5 minutes  |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Performance\RedisRateLimitingAnalyzer`
+
 ## Introduction
 
 This analyzer detects if you are using Redis in your application and also using the `RateLimited` job middleware.

@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | :rocket: Performance | Major | 5 minutes  |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Performance\RedisCacheHitRatioAnalyzer`
+
 ## Introduction
 
 This analyzer calculates your Redis cache hit ratio. Cache hit ratio means the percentage of successful reads (hits) out of all read operations. Mathematically, it is defined as 

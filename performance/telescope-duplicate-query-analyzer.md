@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | :rocket: Performance | Major | 30 minutes  |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Performance\TelescopeDuplicateQueryAnalyzer`
+
 ## Introduction
 
 This analyzer scans your Telescope records to check for duplicate queries - more than one of the same query being executed for the same request.

@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | ⚠️ Critical | 5 minutes   |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Security\ExtractAnalyzer`
+
 ## Introduction
 
 This analyzer scans your application code to detect any `extract` function calls on untrusted user input.

@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | ⚠️ Critical | 10 minutes   |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Security\OpenRedirectionAnalyzer`
+
 ## Introduction
 
 This analyzer scans your application code to detect possible open redirection vulnerabilities.

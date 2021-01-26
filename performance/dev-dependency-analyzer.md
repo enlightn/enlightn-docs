@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | :rocket: Performance | Major | 1 minute    |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Performance\DevDependencyAnalyzer`
+
 ## Introduction
 
 This analyzer ensures that you do not have any dev dependencies installed in a production environment.

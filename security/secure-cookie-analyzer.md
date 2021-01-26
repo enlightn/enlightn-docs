@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | ⚠️ Critical | 1 minute     |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Security\SecureCookieAnalyzer`
+
 ## Introduction
 
 This analyzer confirms that your application sets an appropriate 'secure' cookie attribute on your session cookies. Note that this is also the default value for all cookies in your application.

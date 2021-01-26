@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | Minor      | 5 minutes   |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Security\HorizonSecurityAnalyzer`
+
 ## Introduction
 
 This analyzer checks whether you are running Horizon on a separate subdomain or not.

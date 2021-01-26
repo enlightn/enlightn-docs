@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | Major      | 5 minutes   |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Security\HostInjectionAnalyzer`
+
 ## Introduction
 
 This analyzer ensures that your application uses the `TrustHosts` middleware if trusted proxies are setup.

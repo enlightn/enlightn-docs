@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | Major      | 10 minutes   |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Security\DebugStatementAnalyzer`
+
 ## Introduction
 
 This analyzer confirms that your application does not contain any debug statements.

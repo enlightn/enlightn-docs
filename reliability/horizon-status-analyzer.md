@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | :white_check_mark: Reliability | Major     | 5 minutes   |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Reliability\HorizonStatusAnalyzer`
+
 ## Introduction
 
 This analyzer confirms that Horizon is currently running on your application.

@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | ⚠️ Critical | 30 minutes   |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Security\EvalAnalyzer`
+
 ## Introduction
 
 This analyzer scans your application code to detect any `eval` statements. The `eval` statement or function executes arbitrary code in a string format. This statement or function is extremely dangerous and is actually even discouraged in the PHP documentation.

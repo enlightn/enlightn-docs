@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | :rocket: Performance | Major | 1 hour       |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Performance\SessionDriverAnalyzer`
+
 ## Introduction
 
 Choosing the right session driver can make a major impact to the performance of your application. While making this choice, it is important for you to understand the differences between the major drivers:

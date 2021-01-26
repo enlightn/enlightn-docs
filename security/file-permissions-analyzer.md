@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | ⚠️ Critical | 60 minutes   |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Security\FilePermissionsAnalyzer`
+
 ## Introduction
 
 This analyzer confirms whether your application sets safe directory and file permissions.

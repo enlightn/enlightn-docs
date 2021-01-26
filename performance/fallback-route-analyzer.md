@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | :rocket: Performance | Minor | 10 minutes  |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Performance\FallbackRouteAnalyzer`
+
 ## Introduction
 
 Laravel provides a `Route::fallback` method to register a route that will be executed when no other route matches the incoming request. This may be helpful for testing maybe but can be harmful to your application's SEO.

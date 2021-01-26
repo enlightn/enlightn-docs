@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | ⚠️ Critical | 1 minute     |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Security\AppDebugAnalyzer`
+
 ## Introduction
 
 This analyzer checks to see whether your app debug is set to true while your application is in production. If it is, this is an extremely critical security risk.

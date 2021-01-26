@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | :white_check_mark: Reliability | ⚠️ Critical | 5 minutes    |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Reliability\DirectoryWritePermissionsAnalyzer`
+
 ## Introduction
 
 This analyzer confirms that your storage and cache directories are writable.

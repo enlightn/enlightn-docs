@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | :white_check_mark: Reliability | Major | 10 minutes  |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Reliability\DeadRouteAnalyzer`
+
 ## Introduction
 
 This analyzer confirms that your application does not contain any dead routes.

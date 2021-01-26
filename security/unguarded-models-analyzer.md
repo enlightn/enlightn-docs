@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | Major      | 30 minutes   |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Security\UnguardedModelsAnalyzer`
+
 ## Introduction
 
 This analyzer checks whether your application unguards models. Unguarding models can expose your application to mass assignment vulnerabilities. 

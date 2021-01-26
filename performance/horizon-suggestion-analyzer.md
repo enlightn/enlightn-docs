@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | :rocket: Performance | Minor | 15 minutes  |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Performance\HorizonSuggestionAnalyzer`
+
 ## Introduction
 
 This analyzer simply suggests you install Horizon if you are using the `redis` queue driver. Horizon not only offers a beautiful dashboard for monitoring queues and jobs, but it also offers configurable provisioning plans for queue workers, load balancing strategies and memory management features.

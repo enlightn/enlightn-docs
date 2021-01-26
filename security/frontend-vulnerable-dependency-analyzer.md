@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | ⚠️ Critical | 60 minutes   |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Security\FrontendVulnerableDependencyAnalyzer`
+
 ## Introduction
 
 This analyzer triggers relies on your frontend package manager (NPM or Yarn) to scan for vulnerable dependencies.

@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | :rocket: Performance | Minor | 5 minutes   |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Performance\EventCachingAnalyzer`
+
 ## Introduction
 
 This analyzer ensures that:

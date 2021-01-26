@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | :white_check_mark: Reliability | Major | 5 minutes   |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Reliability\DatabaseStatusAnalyzer`
+
 ## Introduction
 
 This analyzer confirms that your database connections are accessible.

@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | ⚠️ Critical | 10 minutes   |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Security\DirectoryTraversalAnalyzer`
+
 ## Introduction
 
 This analyzer scans your application code for possible directory traversal vulnerabilities.

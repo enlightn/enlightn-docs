@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | ⚠️ Critical | 60 minutes   |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Security\LicenseAnalyzer`
+
 ## Introduction
 
 This analyzer makes sure that you are legally allowed to use your backend dependency packages.

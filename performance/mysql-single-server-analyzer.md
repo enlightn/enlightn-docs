@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | :rocket: Performance | Major | 30 minutes  |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Performance\MysqlSingleServerAnalyzer`
+
 ## Introduction
 
 If your MySQL database is running on your web server, it is highly recommended that you use **Unix sockets** instead of **TCP ports** to communicate with your web server. 

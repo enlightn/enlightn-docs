@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | :white_check_mark: Reliability | Major | 1 minute    |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Reliability\CachePrefixAnalyzer`
+
 ## Introduction
 
 `laravel_cache` is the default cache prefix for all Laravel applications. If you share the same cache servers for multiple applications, this may result in a collision with other applications.

@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | Major      | 5 minutes   |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Security\ObjectInjectionAnalyzer`
+
 ## Introduction
 
 This analyzer scans your application code to detect any `unserialize` function calls on untrusted user input data, which may expose your application to object injection attacks.

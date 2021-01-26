@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | :rocket: Performance | Minor | 5 minutes   |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Performance\ViewCachingAnalyzer`
+
 ## Introduction
 
 This analyzer ensures that your views are cached while your app is in a non-local environment.

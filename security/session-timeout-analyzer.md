@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | Major      | 2 minutes    |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Security\SessionTimeoutAnalyzer`
+
 ## Introduction
 
 This analyzer confirms that your application sets an appropriate session timeout.

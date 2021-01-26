@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | ⚠️ Critical | 60 minutes   |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Security\VulnerableDependencyAnalyzer`
+
 ## Introduction
 
 This analyzer scans your application's backend dependencies for any known vulnerabilities.  

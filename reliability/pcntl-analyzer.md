@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | :white_check_mark: Reliability | Major     | 2 minutes   |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Reliability\PcntlAnalyzer`
+
 ## Introduction
 
 This analyzer confirms that the [PCNTL PHP extension](https://www.php.net/manual/en/book.pcntl.php) is loaded for job timeout support.

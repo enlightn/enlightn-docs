@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | :white_check_mark: Reliability | ⚠️ Critical | 1 minute     |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Reliability\MaintenanceModeAnalyzer`
+
 ## Introduction
 
 This analyzer confirms that your application is not currently in maintenance mode.

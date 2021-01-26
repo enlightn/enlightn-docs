@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | :rocket: Performance | Minor | 5 minutes  |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Performance\SharedCacheLockAnalyzer`
+
 ## Introduction
 
 [Atomic locks](https://laravel.com/docs/cache#atomic-locks) is a mechanism provided by Laravel to manage race conditions and concurrency. If your application uses the `redis` cache driver, you must be careful not to use the same cache connection for locks as you do for your caching.

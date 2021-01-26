@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | :white_check_mark: Reliability | ⚠️ Critical | 10 minutes   |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Reliability\EnvFileAnalyzer`
+
 ## Introduction
 
 This analyzer confirms that a `.env` file exists for your application.

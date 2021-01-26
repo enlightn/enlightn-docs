@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | Major      | 5 minutes    |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Security\ClickjackingAnalyzer`
+
 ## Introduction
 
 This analyzer checks whether your application sets the `X-Frame-Options` security header to protect against clickjacking attacks. This header indicates whether a browser should be allowed to render a page in a `<frame>`, `<iframe>`, `<embed>` or `<object>` tag.

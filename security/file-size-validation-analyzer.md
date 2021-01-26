@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | 🛡️ Security    | Minor      | 5 minutes   |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Security\FileSizeValidationAnalyzer`
+
 ## Introduction
 
 This analyzer scans your application code to detect missing file size validations.

@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | :white_check_mark: Reliability | Minor | 5 minutes   |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Reliability\ScriptTerminatingFunctionAnalyzer`
+
 ## Introduction
 
 This analyzer confirms that your application does not use unrecommended script terminating functions.

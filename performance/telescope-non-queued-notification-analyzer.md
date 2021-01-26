@@ -8,6 +8,8 @@ pro: true
 | -------------  |:----------:| ------------:|
 | :rocket: Performance | Major | 30 minutes  |
 
+**Class:** `Enlightn\EnlightnPro\Analyzers\Performance\TelescopeNonQueuedNotificationAnalyzer`
+
 ## Introduction
 
 This analyzer scans your Telescope records to detect if there are any notifications that are not queued.

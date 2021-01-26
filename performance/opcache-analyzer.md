@@ -4,6 +4,8 @@
 | -------------  |:----------:| ------------:|
 | :rocket: Performance | Major | 10 minutes  |
 
+**Class:** `Enlightn\Enlightn\Analyzers\Performance\OpcacheAnalyzer`
+
 ## Introduction
 
 This analyzer checks to see if Opcache is enabled. By default, Opcache is enabled in PHP 5.5+. So, this should be enabled unless it is configured to be disabled.
