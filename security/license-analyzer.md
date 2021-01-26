@@ -18,12 +18,13 @@ If there are some licenses that you cannot use, you may have to switch to anothe
 
 ## Configuration Options
 
-By default, this analyzer assumes that the MIT, Apache-2.0, ISC, BSD Clause 2 & 3 and LGPL licenses are legally valid to use for proprietary or commercial applications. You may change this using the `license_whitelist` configuration option in your `config/enlightn.php` file:
+By default, this analyzer assumes that the MIT, Apache-2.0, ISC, BSD Clause 2 & 3, LGPL, CC0 and Unlicense licenses are legally valid to use for proprietary or commercial applications. You may change this using the `license_whitelist` configuration option in your `config/enlightn.php` file:
 
 ```php
 'license_whitelist' => [
     'Apache-2.0', 'Apache2', 'BSD-2-Clause', 'BSD-3-Clause', 'LGPL-2.1-only', 'LGPL-2.1',
     'LGPL-2.1-or-later', 'LGPL-3.0', 'LGPL-3.0-only', 'LGPL-3.0-or-later', 'MIT', 'ISC',
+    'CC0-1.0', 'Unlicense',
 ],
 ```
 
