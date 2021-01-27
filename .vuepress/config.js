@@ -97,6 +97,7 @@ module.exports = {
                 '/security/app-debug-analyzer',
                 '/security/app-debug-hide-analyzer',
                 '/security/app-key-analyzer',
+                '/security/arbitrary-file-upload-analyzer',
                 '/security/clickjacking-analyzer',
                 '/security/column-name-sql-injection-analyzer',
                 '/security/command-injection-analyzer',
