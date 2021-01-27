@@ -1,6 +1,6 @@
 # Security
 
-Enlightn has 45 automated security checks (including 26 Enlightn Pro checks).
+Enlightn has 46 automated security checks (including 27 Enlightn Pro checks).
 
 ## :lock: Basic Security
 - [Turn Off App Debug In Production](app-debug-analyzer.html)
@@ -39,6 +39,7 @@ Enlightn has 45 automated security checks (including 26 Enlightn Pro checks).
 - [Mime Sniffing](mime-sniffing-analyzer.html) <Badge text="PRO" type="tip"/>
 
 ## :file_folder: Unrestricted File Uploads and DOS Attacks
+- [Arbitrary File Uploads](arbitrary-file-upload-analyzer.html) <Badge text="PRO" type="tip"/>
 - [Directory Traversal](directory-traversal-analyzer.html) <Badge text="PRO" type="tip"/>
 - [Regex DOS Attacks](regex-dos-analyzer.html) <Badge text="PRO" type="tip"/>
 - [Storage DOS Attacks](file-size-validation-analyzer.html) <Badge text="PRO" type="tip"/>

@@ -31,6 +31,7 @@ $request->validate([
 ## Related Analyzers
 
 - [File Bomb Validation Analyzer](file-bomb-validation-analyzer.html)
+- [Arbitrary File Upload Analyzer](arbitrary-file-upload-analyzer.html)
 
 ## References
 

@@ -38,6 +38,7 @@ If that is not an option, avoid decompressing the ZIP files you accept from user
 ## Related Analyzers
 
 - [File Size Validation Analyzer](file-size-validation-analyzer.html)
+- [Arbitrary File Upload Analyzer](arbitrary-file-upload-analyzer.html)
 
 ## References
 
