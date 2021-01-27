@@ -184,6 +184,7 @@ module.exports = {
                 '/reliability/redis-status-analyzer',
                 '/reliability/script-terminating-function-analyzer',
                 '/reliability/storage-link-analyzer',
+                '/reliability/syntax-error-analyzer',
                 '/reliability/undefined-constant-analyzer',
                 '/reliability/undefined-variable-analyzer',
                 '/reliability/unset-analyzer',
