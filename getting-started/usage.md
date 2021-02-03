@@ -26,6 +26,49 @@ If you want to get the full Enlightn experience, it is recommended that you at l
 
 In case you don't want to run on production, you can simulate a production environment by setting your APP_ENV to production, setting up services and config as close to production as possible and running your production deployment script locally. Then run the Enlightn Artisan command.
 
+## Usage in CI Environments
+
+If you wish to integrate Enlightn with your CI, you can simply trigger the `--ci` option when running Enlightn in your CI/CD tool:
+
+```bash
+php artisan enlightn --ci
+```
+
+Enlightn pre-configures which analyzers can be run in CI mode for you. So, the above command excludes analyzers that need a full setup to run (e.g. analyzers using dynamic analysis).
+
+You can additionally exclude analyzers in CI mode (besides the ones pre-configured by Enlightn) using the `ci_mode_exclude_analyzers` configuration option in your `config/enlightn.php` file. 
+
+If you wish to completely override the list of analyzers that run in CI mode, you can use the `ci_mode_analyzers` configuration option like so:
+
+```php
+// In your config/enlightn.php file
+'ci_mode_analyzers' => [
+    Enlightn\Enlightn\Analyzers\Performance\CollectionCallAnalyzer::class,
+    Enlightn\Enlightn\Analyzers\Performance\EnvCallAnalyzer::class,
+    ...
+],
+```
+
+## Authenticating Enlightn Pro in CI Environments
+
+To authenticate Enlightn Pro in your CI environment, you can use Composer to set your credentials using environment variables like so:
+
+```bash
+composer config http-basic.satis.laravel-enlightn.com "$ENLIGHTN_USERNAME" "$ENLIGHTN_API_TOKEN"
+```
+
+Remember to configure these environment variables as "secrets" in your CI/CD tool. For instance, for Github actions, you can configure your Composer install step similar to the following:
+
+```yaml
+- name: Install dependencies
+  env:
+    ENLIGHTN_USERNAME: ${{ secrets.ENLIGHTN_USERNAME }}
+    ENLIGHTN_API_TOKEN: ${{ secrets.ENLIGHTN_API_TOKEN }}
+  run: |
+    composer config http-basic.satis.laravel-enlightn.com "$ENLIGHTN_USERNAME" "$ENLIGHTN_API_TOKEN"
+    composer update --prefer-dist --no-interaction --no-progress --no-scripts
+```
+
 ## Failed Checks
 
 All checks that fail will include a description of why they failed along with the associated lines of code (if applicable).
