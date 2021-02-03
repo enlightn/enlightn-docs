@@ -1,4 +1,5 @@
 # Running Enlightn
+[[toc]]
 
 ## Enlightn Command
 
@@ -26,6 +27,61 @@ If you want to get the full Enlightn experience, it is recommended that you at l
 
 In case you don't want to run on production, you can simulate a production environment by setting your APP_ENV to production, setting up services and config as close to production as possible and running your production deployment script locally. Then run the Enlightn Artisan command.
 
+## Usage in CI Environments
+
+If you wish to integrate Enlightn with your CI, you can simply trigger the `--ci` option when running Enlightn in your CI/CD tool:
+
+```bash
+php artisan enlightn --ci
+```
+
+Enlightn pre-configures which analyzers can be run in CI mode for you. So, the above command excludes analyzers that need a full setup to run (e.g. analyzers using dynamic analysis).
+
+You can additionally exclude analyzers in CI mode (besides the ones pre-configured by Enlightn) using the `ci_mode_exclude_analyzers` configuration option in your `config/enlightn.php` file. 
+
+If you wish to completely override the list of analyzers that run in CI mode, you can use the `ci_mode_analyzers` configuration option like so:
+
+```php
+// In your config/enlightn.php file
+'ci_mode_analyzers' => [
+    Enlightn\Enlightn\Analyzers\Performance\CollectionCallAnalyzer::class,
+    Enlightn\Enlightn\Analyzers\Performance\EnvCallAnalyzer::class,
+    ...
+],
+```
+
+You may want to copy your `.env.example` file to `.env` before you run Enlightn in CI mode. Some of Enlightn's analyzers check configurations, and so they may need a `.env` file present.
+
+An example of a Github actions step on running the Enlightn command is as follows:
+
+```yaml
+- name: Execute tests
+  run: |
+    cp .env.example .env
+    php artisan enlightn --ci
+    rm .env
+```
+
+## Authenticating Enlightn Pro in CI Environments
+
+To authenticate Enlightn Pro in your CI environment, you can use Composer to set your credentials using environment variables like so:
+
+```bash
+composer config http-basic.satis.laravel-enlightn.com "$ENLIGHTN_USERNAME" "$ENLIGHTN_API_TOKEN"
+```
+
+Remember to configure these environment variables as "secrets" in your CI/CD tool. For instance, for Github actions, you can configure your Composer install step similar to the following:
+
+```yaml
+- name: Install dependencies
+  env:
+    ENLIGHTN_USERNAME: ${{ secrets.ENLIGHTN_USERNAME }}
+    ENLIGHTN_API_TOKEN: ${{ secrets.ENLIGHTN_API_TOKEN }}
+  run: |
+    composer config http-basic.satis.laravel-enlightn.com "$ENLIGHTN_USERNAME" "$ENLIGHTN_API_TOKEN"
+    composer update --prefer-dist --no-interaction --no-progress --no-scripts
+```
+
 ## Failed Checks
 
 All checks that fail will include a description of why they failed along with the associated lines of code (if applicable).
@@ -44,4 +100,6 @@ The checks reported under the "Error" row indicate the analyzers that failed wit
 
 ## How Frequently Should I Run Enlightn?
 
-A good practice would be to run Enlightn every time you are deploying code or pushing or a new release. If your application is stable (not many new releases), then you might want to run Enlightn say once a month or so. Remember that Enlightn not only scans your application code but also monitors your application's health.
+A good practice would be to run Enlightn every time you are deploying code or pushing or a new release. It is recommended to integrate Enlightn with your CI/CD tool so that it is triggered for every push or new release.
+
+Besides the automated CI checks, you might also want to run Enlightn on a regular frequency such as every week. This will allow you to monitor the dynamic analysis checks, which are typically excluded from CI tests. 
