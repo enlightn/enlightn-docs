@@ -1,4 +1,5 @@
 # Running Enlightn
+[[toc]]
 
 ## Enlightn Command
 
