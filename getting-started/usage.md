@@ -49,6 +49,18 @@ If you wish to completely override the list of analyzers that run in CI mode, yo
 ],
 ```
 
+You may want to copy your `.env.example` file to `.env` before you run Enlightn in CI mode. Some of Enlightn's analyzers check configurations, and so they may need a `.env` file present.
+
+An example of a Github actions step on running the Enlightn command is as follows:
+
+```yaml
+- name: Execute tests
+  run: |
+    cp .env.example .env
+    php artisan enlightn --ci
+    rm .env
+```
+
 ## Authenticating Enlightn Pro in CI Environments
 
 To authenticate Enlightn Pro in your CI environment, you can use Composer to set your credentials using environment variables like so:
@@ -87,4 +99,6 @@ The checks reported under the "Error" row indicate the analyzers that failed wit
 
 ## How Frequently Should I Run Enlightn?
 
-A good practice would be to run Enlightn every time you are deploying code or pushing or a new release. If your application is stable (not many new releases), then you might want to run Enlightn say once a month or so. Remember that Enlightn not only scans your application code but also monitors your application's health.
+A good practice would be to run Enlightn every time you are deploying code or pushing or a new release. It is recommended to integrate Enlightn with your CI/CD tool so that it is triggered for every push or new release.
+
+Besides the automated CI checks, you might also want to run Enlightn every week or so. Remember that Enlightn not only scans your application code but also monitors your application's health and server configurations.
