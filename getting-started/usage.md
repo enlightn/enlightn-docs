@@ -102,4 +102,4 @@ The checks reported under the "Error" row indicate the analyzers that failed wit
 
 A good practice would be to run Enlightn every time you are deploying code or pushing or a new release. It is recommended to integrate Enlightn with your CI/CD tool so that it is triggered for every push or new release.
 
-Besides the automated CI checks, you might also want to run Enlightn every week or so. Remember that Enlightn not only scans your application code but also monitors your application's health and server configurations.
+Besides the automated CI checks, you might also want to run Enlightn on a regular frequency such as every week. This will allow you to monitor the dynamic analysis checks, which are typically excluded from CI tests. 
