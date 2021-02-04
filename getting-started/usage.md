@@ -27,6 +27,14 @@ If you want to get the full Enlightn experience, it is recommended that you at l
 
 In case you don't want to run on production, you can simulate a production environment by setting your APP_ENV to production, setting up services and config as close to production as possible and running your production deployment script locally. Then run the Enlightn Artisan command.
 
+## View Detailed Error Messages
+
+By default, the `enlightn` Artisan command highlights the file paths, associated line numbers and a message for each failed check. If you wish to display detailed error messages for each line, you may use the `--details` option:
+
+```bash
+php artisan enlightn --details
+```
+
 ## Usage in CI Environments
 
 If you wish to integrate Enlightn with your CI, you can simply trigger the `--ci` option when running Enlightn in your CI/CD tool:
@@ -100,6 +108,6 @@ The checks reported under the "Error" row indicate the analyzers that failed wit
 
 ## How Frequently Should I Run Enlightn?
 
-A good practice would be to run Enlightn every time you are deploying code or pushing or a new release. It is recommended to integrate Enlightn with your CI/CD tool so that it is triggered for every push or new release.
+A good practice would be to run Enlightn every time you are deploying code or pushing a new release. It is recommended to integrate Enlightn with your CI/CD tool so that it is triggered for every push or new release.
 
 Besides the automated CI checks, you might also want to run Enlightn on a regular frequency such as every week. This will allow you to monitor the dynamic analysis checks, which are typically excluded from CI tests. 
