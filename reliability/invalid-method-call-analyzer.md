@@ -21,6 +21,10 @@ Some examples of invalid method calls include:
 7. Calling methods outside of class scope.
 8. Method signature mismatch.
 
+:::tip Viewing Detailed Error Messages
+To view detailed error messages, use the `--details` option while running the `enlightn` Artisan command.
+:::
+
 ## How To Fix
 
 The analyzer highlights the files and lines of code where these bugs may appear. To fix them, you need to make sure that the method exists, is accessible within the scope, and the call matches the method signature.

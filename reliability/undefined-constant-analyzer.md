@@ -16,6 +16,10 @@ Some examples of such code include:
 2. Trying to access a constant outside of its class scope.
 3. Trying to access a constant on an unknown class or a class that has not been imported properly.
 
+:::tip Viewing Detailed Error Messages
+To view detailed error messages, use the `--details` option while running the `enlightn` Artisan command.
+:::
+
 ## How To Fix
 
 The analyzer highlights the files and lines of code where these bugs may appear. To fix them, make sure there are no undefined constants based on the examples listed above.

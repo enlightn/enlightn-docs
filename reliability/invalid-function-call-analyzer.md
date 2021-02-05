@@ -20,6 +20,10 @@ function bar($foo, $bar)
 }
 ```
 
+:::tip Viewing Detailed Error Messages
+To view detailed error messages, use the `--details` option while running the `enlightn` Artisan command.
+:::
+
 ## How To Fix
 
 The analyzer highlights the files and lines of code where these bugs may appear. To fix them, you should confirm the following:

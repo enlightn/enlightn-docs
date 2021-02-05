@@ -38,6 +38,10 @@ Here, depending on the return value of the `doFoo` function, the `$arrayOrFalse`
 
 There may be a small percentage of "false positives" where a condition may always be true or false, making the variable iterable at all times. In such situations, you may ignore this analyzer. 
 
+:::tip Viewing Detailed Error Messages
+To view detailed error messages, use the `--details` option while running the `enlightn` Artisan command.
+:::
+
 ## How To Fix
 
 This analyzer displays the files and lines of code where the possible bugs may be. You would need to evaluate whether your code actually contains a bug and fix it accordingly.
