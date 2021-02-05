@@ -10,7 +10,11 @@
 
 This analyzer scans your application code to ensure that your code does not have any missing return statements.
 
-If a return type is not explicitly defined in your method or function definition, then this analyzer considers the return type defined in the docblock. 
+If a return type is not explicitly defined in your method or function definition, then this analyzer considers the return type defined in the docblock.
+
+:::tip Viewing Detailed Error Messages
+To view detailed error messages, use the `--details` option while running the `enlightn` Artisan command.
+:::
 
 ## How To Fix
 

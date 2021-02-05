@@ -18,6 +18,10 @@ use const Uses\MY_CONSTANT;
 
 If this constant does not exist or the namespace used in the "use" statement is incorrect, the analyzer will result in a failure.
 
+:::tip Viewing Detailed Error Messages
+To view detailed error messages, use the `--details` option while running the `enlightn` Artisan command.
+:::
+
 ## How To Fix
 
 Make sure that there is no typo in the namespace or the structure you are importing.

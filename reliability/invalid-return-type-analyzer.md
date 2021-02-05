@@ -17,6 +17,10 @@ Some examples of such code include:
 
 Since PHP is a loosely typed language, some of the return types may be derived by the docblock and it could happen that your code is correct but your docblock may be incorrect for some of the errors highlighted by this analyzer.
 
+:::tip Viewing Detailed Error Messages
+To view detailed error messages, use the `--details` option while running the `enlightn` Artisan command.
+:::
+
 ## How To Fix
 
 Make sure that the return types of your methods and functions match the signature. If your docblock is incorrect, you may correct your docblock for these warnings to disappear.

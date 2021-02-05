@@ -22,7 +22,7 @@ After installing Enlightn, you may publish its assets using the vendor:publish A
 php artisan vendor:publish --tag=enlightn
 ```
 
-:::tip Enlight Pro
+:::tip Enlightn Pro
 
 If you are installing Enlightn Pro, you do not need to install Enlightn and you may skip the above steps as Enlightn Pro already pulls in Enlightn as a dependency for you.
 :::

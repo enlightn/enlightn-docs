@@ -30,6 +30,10 @@ function exampleFn(array $a) {
 
 In the example code above, the highlighted line is a no-op because it is iterating over an empty array every time.
 
+:::tip Viewing Detailed Error Messages
+To view detailed error messages, use the `--details` option while running the `enlightn` Artisan command.
+:::
+
 ## How To Fix
 
 To fix this issue, you can delete all unreachable or dead code to improve code readability.
