@@ -70,6 +70,26 @@ An example of a Github actions step on running the Enlightn command is as follow
     rm .env
 ```
 
+## Establishing a Baseline
+
+Sometimes, especially in CI environments, you may want to declare the currently reported list of errors as the "baseline". This means that the current errors will not be reported in subsequent runs and only new errors will be flagged.
+
+To generate the baseline automatically, you may run the `enlightn:baseline` Artisan command:
+
+```bash
+php artisan enlightn:baseline
+```
+
+This command automatically changes the `dont_report` and `ignore_errors` configuration options in your `config/enlightn.php` file such that all currently reported errors are ignored for subsequent runs.
+
+If you wish to run this command in CI mode, you can use the `--ci` option:
+
+```bash
+php artisan enlightn:baseline --ci
+```
+
+This will generate the `dont_report` and `ignore_errors` configuration options by only considering the analyzers that run in CI mode.
+
 ## Authenticating Enlightn Pro in CI Environments
 
 To authenticate Enlightn Pro in your CI environment, you can use Composer to set your credentials using environment variables like so:
