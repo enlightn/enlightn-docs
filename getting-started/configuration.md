@@ -71,6 +71,27 @@ This means that even if the XSS analyzer fails, it will not result in a non-zero
 
 Note that this does not mean that these analyzers won't run. They will still run and be displayed in the output of the `enlightn` command. If you wish to exclude them from the analysis, you should use the `exclude_analyzers` configuration option instead.
 
+## Ignoring Errors
+
+Some analyzers show detailed error messages for each line of code flagged. These details can be viewed when you run the `enlightn` Artisan command using the `--details` option.
+
+Instead of completely ignoring such analyzers using the `exclude_analyzers` or `dont_report` options, you may also ignore specific errors using the `ignore_errors` configuration option:
+
+```php
+'ignore_errors' => [
+    \Enlightn\Enlightn\Reliability\InvalidMethodCallAnalyzer::class => [
+        [
+            'path' => 'app/Models/Test.php',
+            'details' => '*undefined method*',
+        ],
+    ],
+],
+```
+
+The `details` value supports patterns as well as exact string matches.
+
+Both `dont_report` and `ignore_errors` can be automatically generated for you by Enlightn if you [establish a baseline](usage.html#establishing-a-baseline).
+
 ## Compact Lines
 
 By default, the `enlightn` Artisan command restricts the maximum number of files displayed to avoid cluttered output.
