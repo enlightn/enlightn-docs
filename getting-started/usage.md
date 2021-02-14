@@ -128,7 +128,7 @@ The checks reported under the "Error" row indicate the analyzers that failed wit
 
 ## Before Running Callback
 
-If you wish to run some code before Enlightn runs its analyzer checks, you can register a "beforeRunning" callback like so:
+If you wish to execute some code before Enlightn runs its analyzer checks, you can register a "beforeRunning" callback like so:
 
 ```php
 use Enlightn\Enlightn\Enlightn;
