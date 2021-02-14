@@ -126,6 +126,21 @@ The checks indicated as "Not Applicable" were not applicable to your specific ap
 
 The checks reported under the "Error" row indicate the analyzers that failed with exceptions during the analysis. Normally, this should not happen but if it does, the associated error message will be displayed and may have something to do with your application.
 
+## Before Running Callback
+
+If you wish to execute some code before Enlightn runs its analyzer checks, you can register a "beforeRunning" callback like so:
+
+```php
+use Enlightn\Enlightn\Enlightn;
+
+// In the boot method of your AppServiceProvider
+Enlightn::beforeRunning(function () {
+    // preload code here.
+});
+```
+
+This may be useful for some applications (such as [multi-tenancy apps](https://github.com/enlightn/enlightn/issues/40)) that need to run some "preload" code affecting the configuration values, middleware or route registrations.
+
 ## How Frequently Should I Run Enlightn?
 
 A good practice would be to run Enlightn every time you are deploying code or pushing a new release. It is recommended to integrate Enlightn with your CI/CD tool so that it is triggered for every push or new release.
