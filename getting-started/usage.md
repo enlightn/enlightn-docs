@@ -110,6 +110,21 @@ Remember to configure these environment variables as "secrets" in your CI/CD too
     composer update --prefer-dist --no-interaction --no-progress --no-scripts
 ```
 
+## Authenticating Enlightn Pro in Immutable Environments
+
+You can set the `COMPOSER_AUTH` env parameter in immutable infrastructures (Heroku, Scalingo, ...) to provide credentials to composer:
+
+```json
+{
+    "http-basic":{
+        "satis.laravel-enlightn.com":{
+            "username":"YOUR ENLIGHTN USERNAME",
+            "password":"YOUR ENLIGHTN API TOKEN"
+        }
+    }
+}
+```
+
 ## Failed Checks
 
 All checks that fail will include a description of why they failed along with the associated lines of code (if applicable).
