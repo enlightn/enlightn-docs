@@ -112,7 +112,7 @@ Remember to configure these environment variables as "secrets" in your CI/CD too
 
 ## Authenticating Enlightn Pro in Immutable Environments
 
-You can set the `COMPOSER_AUTH` env parameter in immutable infrastructures (Heroku, Scalingo, ...) to provide credentials to composer:
+You can set the `COMPOSER_AUTH` env parameter in immutable infrastructures (Heroku, Scalingo, etc.) to provide credentials to Composer:
 
 ```json
 {
