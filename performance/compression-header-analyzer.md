@@ -1,5 +1,6 @@
 ---
 pro: true
+description: Compression headers can provide a massive performance boost of upto 80% file size savings! Make sure to set these headers on your JS and CSS asset files.
 ---
 
 # Compression Header Analyzer <Badge text="PRO" type="tip"/>
