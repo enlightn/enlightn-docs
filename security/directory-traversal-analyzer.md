@@ -83,6 +83,10 @@ For even more security, you may set the `doc_root` and `open_basedir` PHP config
 Using `open_basedir` will disable the realpath cache. This may adversely impact your application performance. 
 :::
 
+## Live Demo of Directory Traversal Vulnerability
+
+Here's a [Laravel Playground gist](https://laravelplayground.com/#/gist/5728c52da21fa2ad628e77fe3a241203) to demonstrate a live demo of the vulnerability.
+
 ## Related Analyzers
 
 - [Unrestricted File Upload Analyzer](unrestricted-file-upload-analyzer.html)

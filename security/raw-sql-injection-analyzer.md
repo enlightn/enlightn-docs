@@ -56,6 +56,10 @@ use App\Models\Book;
 Book::whereRaw('author = :author', ['author' => $request->input('author')]);
 ```
 
+## Live Demo of SQL Injection Vulnerability
+
+Here's a [Laravel Playground gist](https://laravelplayground.com/#/gist/55e1b1c11d0f84031b9f3b323d7060c5) to demonstrate a live demo of the vulnerability.
+
 ## Related Analyzers
 
 - [SQL Injection Analyzer](sql-injection-analyzer.html)
