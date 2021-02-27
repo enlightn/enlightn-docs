@@ -54,6 +54,13 @@ Here's how the review comments look like for Github pull requests:
 'github_repo' => env('ENLIGHTN_GITHUB_REPO'),
 ```
 
+In your `.env` file:
+```ini
+ENLIGHTN_USERNAME=your@email.com
+ENLIGHTN_API_TOKEN=<your api token here>
+ENLIGHTN_GITHUB_REPO=your/repo
+```
+
 7. Next, modify your Enlightn CI step in your Github action as follows:
 
 ```yaml
