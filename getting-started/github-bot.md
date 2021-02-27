@@ -76,7 +76,7 @@ For the Enlightn Bot to function, it needs some information on which checks fail
 
 To be completely transparent as to what information is sent, we are including the details here:
 - **Project Metadata:** app name, app env, app URL, Composer project name, Github repository, Github PR number.
-- **Analyzer information (for each check):** title, status (passed/failed), analyzer metadata (such as the docs URL, severity, etc.), line numbers of the code associated with the failed checks, surrounding code snippet of 30 lines.
+- **Analyzer information (for each check):** title, status (passed/failed), analyzer metadata (such as the docs URL, severity, etc.), line numbers of the code associated with the failed checks, code snippet of 30 lines surrounding the code responsible for failed checks.
 - **Analyzer stats:** includes how many analyzers passed/failed/skipped, etc. by category.
 
 This information is used for the Github bot to add the review comments on the pull request diff and for compiling the report comment.
