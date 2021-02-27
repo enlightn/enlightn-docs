@@ -24,7 +24,7 @@ Here's how the review comments look like for Github pull requests:
 - **Public Repositories:** Anyone can install the Github bot for public / open source repositories.
 - **Private Repositories:** Only Enlightn Pro users can install the Github bot on private repositories.
 
-## Installation Instructions
+## Installation Steps
 
 1. First, make sure that you have Enlightn version 1.16.0 (or higher) or Enlightn Pro version 1.11.0 (or higher) installed.
 2. If you haven't already, [signup on the Enlightn website](https://www.laravel-enlightn.com/register).
@@ -73,6 +73,10 @@ If you don't want the Enlightn Bot to add review comments on the pull request, s
 8. Finally, add your `ENLIGHTN_USERNAME` and `ENLIGHTN_API_TOKEN` [secrets to your Github repository or organization](https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository) if you haven't already.
 
 After the above steps, you're all set. On your next pull request, the Enlightn Github bot will be available to "review" and comment on your pull requests. How cool is that! :sunglasses:
+
+## Steps to Uninstall
+
+If you want to uninstall the Enlightn Github bot from some of your repositories, just visit the [Repositories section](https://www.laravel-enlightn.com/repositories) on the Enlightn website and click on the "**Add Github Repositories**" button. This will take you to a Github page where you will see the option to configure the Enlightn Github app on your organizations. Click on the relevant organization and then click on the "Uninstall" button on the bottom.
 
 ## Information Shared With The Enlightn Bot
 
