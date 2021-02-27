@@ -63,11 +63,10 @@ You may want to copy your `.env.example` file to `.env` before you run Enlightn 
 An example of a Github actions step on running the Enlightn command is as follows:
 
 ```yaml
-- name: Execute tests
+- name: Run Enlightn Checks
   run: |
     cp .env.example .env
     php artisan enlightn --ci
-    rm .env
 ```
 
 ## Establishing a Baseline
