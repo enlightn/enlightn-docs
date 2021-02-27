@@ -1,3 +1,7 @@
+---
+image: https://cdn.laravel-enlightn.com/images/github_bot.png
+---
+
 # Github Bot Integration
 [[toc]]
 
