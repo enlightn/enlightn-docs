@@ -106,7 +106,7 @@ Remember to configure these environment variables as "secrets" in your CI/CD too
     ENLIGHTN_API_TOKEN: ${{ secrets.ENLIGHTN_API_TOKEN }}
   run: |
     composer config http-basic.satis.laravel-enlightn.com "$ENLIGHTN_USERNAME" "$ENLIGHTN_API_TOKEN"
-    composer update --prefer-dist --no-interaction --no-progress --no-scripts
+    composer install --prefer-dist --no-interaction --no-progress --no-scripts
 ```
 
 ## Authenticating Enlightn Pro in Immutable Environments
