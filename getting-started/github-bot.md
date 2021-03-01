@@ -79,6 +79,63 @@ If you don't want the Enlightn Bot to add review comments on the pull request, s
 
 After the above steps, you're all set. On your next pull request, the Enlightn Github bot will be available to "review" and comment on your pull requests. How cool is that! :sunglasses:
 
+## Full Working Example of Github Action
+
+If you're new to Github actions, don't worry. We have you covered! Here's a full working example of a Github action that you can configure right away.
+
+Remember to follow points #1-6 and point #8 in the installation instructions above. Then, create a `.github/workflows/enlightn.yaml` file in your repository:
+
+```yaml
+name: Enlightn Checks
+
+on: [pull_request]
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        php: [7.4]
+
+    name: P${{ matrix.php }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: dom, curl, libxml, mbstring, zip, json
+          coverage: none
+
+      - name: Install dependencies
+        env:
+          ENLIGHTN_USERNAME: ${{ secrets.ENLIGHTN_USERNAME }}
+          ENLIGHTN_API_TOKEN: ${{ secrets.ENLIGHTN_API_TOKEN }}
+        run: |
+          composer config http-basic.satis.laravel-enlightn.com "$ENLIGHTN_USERNAME" "$ENLIGHTN_API_TOKEN"
+          composer install --prefer-dist --no-interaction --no-progress --no-scripts
+
+      - name: Run Enlightn Checks and Trigger the Enlightn Bot
+        if: ${{ github.event_name == 'pull_request' }}
+        env:
+          ENLIGHTN_USERNAME: ${{ secrets.ENLIGHTN_USERNAME }}
+          ENLIGHTN_API_TOKEN: ${{ secrets.ENLIGHTN_API_TOKEN }}
+          ENLIGHTN_GITHUB_REPO: ${{ github.repository }}
+        run: |
+          cp .env.example .env
+          php artisan enlightn --ci --report --review --issue=${{ github.event.number }}
+```
+
+The `composer config http-basic.satis.laravel-enlightn.com` line above is only required for Enlightn Pro users. So, you can delete that line (and keep the `composer install` step on the next line) if you are an Enlightn OSS user.  
+
+Feel free to modify the PHP version or add services in the workflow above (if needed).
+
+Learn more about Github actions [here](https://docs.github.com/en/actions/learn-github-actions/introduction-to-github-actions).
+
 ## Steps to Uninstall
 
 If you want to uninstall the Enlightn Github bot from some of your repositories, just visit the [Repositories section](https://www.laravel-enlightn.com/repositories) on the Enlightn website and click on the "**Add Github Repositories**" button. This will take you to a Github page where you will see the option to configure the Enlightn Github app on your organizations. Click on the relevant organization and then click on the "Uninstall" button on the bottom.
