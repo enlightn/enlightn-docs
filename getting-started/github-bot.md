@@ -28,7 +28,7 @@ Here's how the compiled report and review comments look like for every pull requ
 2. If you haven't already, [signup on the Enlightn website](https://www.laravel-enlightn.com/register).
 3. Next, visit the [Repositories section](https://www.laravel-enlightn.com/repositories) on the Enlightn website and click on the "**Add Github Repositories**" button. This will redirect to a Github page, where you can choose which repositories you would like to install the Enlightn Github bot on.
 4. After installation of the Github app, you should see your installed repositories in the [Repositories section](https://www.laravel-enlightn.com/repositories). In case you don't see the new installed repositories immediately, you may need to give it a refresh after a few seconds.
-5. Next, integrate Enlightn as a Github action as described [here](usage.html#usage-in-ci-environments).
+5. Next, integrate Enlightn as a Github action as described [here](usage.html#usage-in-ci-environments). If you are not familiar with Github actions, see below for a [full example of an Enlightn Github action](#full-working-example-of-github-action).
 6. Next, add your Enlightn credentials and Github repository name in your `config/enlightn.php` and `.env` files respectively. Your username is the email you used to register on Enlightn. The API token can be found on the [profile section](https://www.laravel-enlightn.com/user/profile) of the website after logging in.
 
 ```php
