@@ -13,13 +13,9 @@ Enlightn has a Github Bot that can do the following:
 - Compile a report for every pull request highlighting the failed checks.
 - Add review comments on the pull request diff on the lines of code that introduce new issues.
 
-Here's how the compiled report looks like for every pull request or push to a pull request:
+Here's how the compiled report and review comments look like for every pull request or push to a pull request:
 
-<img :src="$withBase('/images/github_report.png')" alt="Enlightn Github Bot Report" />
-
-Here's how the review comments look like for Github pull requests:
-
-<img :src="$withBase('/images/github_bot.png')" alt="Enlightn Github Bot Review Comments" />
+<img :src="$withBase('/images/github_bot.png')" alt="Enlightn Github Bot PR Review" />
 
 ## Who Can Install
 
