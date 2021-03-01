@@ -1,5 +1,7 @@
 ---
+description: The Enlightn Github Bot can add review comments and compile reports for your pull requests. Learn how you can integrate with the Enlightn Github bot. 
 image: https://cdn.laravel-enlightn.com/images/github_bot.png
+twitterCard: summary_large_image
 ---
 
 # Github Bot Integration
