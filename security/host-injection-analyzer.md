@@ -12,17 +12,21 @@ pro: true
 
 ## Introduction
 
-This analyzer ensures that your application uses the `TrustHosts` middleware if trusted proxies are setup.
+This analyzer ensures that your application is not vulnerable to host injection attacks. In this attack, the attacker can change the host of a signed URL using the `X-Forwarded-Host` or the `Host` header. This would allow an attacker to generate a malicious password reset email with a link to a website controlled by the attacker.
 
-If your application is behind a load balancer or reverse proxy and it does not set trusted hosts, it will be exposed to host injection attacks. In this attack, the attacker can change the host of a signed URL using the `X-Forwarded-Host` header. This would allow an attacker to generate a malicious password reset email with a link to a website controlled by the attacker.
+Host injection attacks can happen via either the `X-Forwarded-Host` header or the `Host` header:
+1. If your application is behind a load balancer or reverse proxy and it does not set trusted hosts, it will be exposed to host injection attacks via the `X-Forwarded-Host` header. If you have already set the `X-Forwarded-Host` header at your reverse proxy level, you may ignore this analyzer.
+2. If your web server configuration is insecure, it may allow host injection attacks via the `Host` Header. This may happen if you use server name wildcards or do not have catch-all server configurations to catch all requests with unrecognized Host headers.  
 
-If you have already set the `X-Forwarded-Host` header at your reverse proxy level, you may ignore this analyzer.
+## How To Fix Host Header Injection
 
-::: danger Secure Web Server Configuration
-This analyzer assumes that your web server configuration is secure. If that is not the case, you may still be vulnerable to host injection attacks. To secure your web server configuration, make sure to configure a catch-all server block (Nginx) or VirtualHost (Apache) to catch all requests with unrecognized Host headers, specify non-wildcard server names and turn on the `UseCanonicalName` directive (for Apache).
-:::
+To fix `Host` header injection attacks, you must have a secure web server configuration.
 
-## How To Fix
+Make sure to configure a catch-all server block (Nginx) or VirtualHost (Apache) to catch all requests with unrecognized Host headers, specify non-wildcard server names and turn on the `UseCanonicalName` directive (for Apache).
+
+If you use reverse proxy CDNs such as Cloudflare, they should automatically take care of this for you.
+
+## How To Fix X-Forwarded-Host Header Injection
 
 ### Option 1: Add the TrustHosts Middleware
 
