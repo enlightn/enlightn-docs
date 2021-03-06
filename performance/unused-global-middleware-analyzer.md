@@ -14,7 +14,7 @@ This analyzer checks to see if there are any "unused" global middleware classes 
 
 1. HandleCors: If your application does not use CORS (your `cors.paths` configuration is an empty array), then this middleware is flagged as unused.
 2. TrustProxies: If your application does not configure trusted proxies (using the `trustedproxy.proxies` configuration), then this middleware is flagged as unused.
-3. TrustHosts: If your application does not use setup trusted proxies, then you do not need to setup trusted hosts either and this middleware is flagged as unused.
+3. TrustHosts: If your application does not use setup trusted proxies, then you do not need to setup trusted hosts either (as long as your web server is configured in a [secure manner](../security/host-injection-analyzer.html)) and this middleware is flagged as unused. In case, you do not have access or control over your web server configuration, you may need this middleware even if you do not use trusted proxies. In this case, you may ignore this analyzer.
 
 ## How To Fix
 
