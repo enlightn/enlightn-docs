@@ -18,8 +18,8 @@ If your application is behind a load balancer or reverse proxy and it does not s
 
 If you have already set the `X-Forwarded-Host` header at your reverse proxy level, you may ignore this analyzer.
 
-::: danger Wildcard Server Names
-Note that you may also be exposed to a host injection attack if trusted proxies are not setup and your server name is setup as a wildcard on your web server. This however, has more to do with an insecure web server configuration and this analyzer does not detect such situations. It is recommended to configure your web server without a wildcard server name. 
+::: danger Secure Web Server Configuration
+This analyzer assumes that your web server configuration is secure. If that is not the case, you may still be vulnerable to host injection attacks. To secure your web server configuration, make sure to configure a catch-all server block (Nginx) or VirtualHost (Apache) to catch all requests with unrecognized Host headers, specify non-wildcard server names and turn on the `UseCanonicalName` directive (for Apache).
 :::
 
 ## How To Fix
