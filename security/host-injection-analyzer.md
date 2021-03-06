@@ -24,6 +24,8 @@ To fix `Host` header injection attacks, you must have a secure web server config
 
 Make sure to configure a catch-all server block (Nginx) or VirtualHost (Apache) to catch all requests with unrecognized Host headers, specify non-wildcard server names and turn on the `UseCanonicalName` directive (for Apache).
 
+In case you do not have control over your web server configuration, you may add the `TrustHosts` middleware to your global middleware.
+
 If you use reverse proxy CDNs such as Cloudflare, they should automatically take care of this for you.
 
 ## How To Fix X-Forwarded-Host Header Injection
