@@ -30,7 +30,7 @@ Enlightn has 35 automated performance checks (including 18 Enlightn Pro checks).
 - [Redis Sockets for Single Server Setups](redis-single-server-analyzer.html) <Badge text="PRO" type="tip"/>
 - [Redis Cache Hit Ratio](redis-cache-hit-ratio-analyzer.html) <Badge text="PRO" type="tip"/>
 - [Cache Hit Ratio](telescope-cache-hit-ratio-analyzer.html) <Badge text="PRO" type="tip"/>
-- [HTTP/2](http-two-analyzer.html)
+- [HTTP/2](http-two-analyzer.html) <Badge text="PRO" type="tip"/>
 
 ## 🛸 Choosing The Right Driver
 - [Cache Driver](cache-driver-analyzer.html)
