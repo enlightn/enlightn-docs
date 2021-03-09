@@ -108,6 +108,7 @@ module.exports = {
                 '/security/debug-statement-analyzer',
                 '/security/directory-traversal-analyzer',
                 '/security/encrypted-cookies-analyzer',
+                '/security/env-access-analyzer',
                 '/security/eval-analyzer',
                 '/security/extract-analyzer',
                 '/security/file-bomb-validation-analyzer',
