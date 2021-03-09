@@ -1,8 +1,9 @@
 # Security
 
-Enlightn has 46 automated security checks (including 27 Enlightn Pro checks).
+Enlightn has 47 automated security checks (including 27 Enlightn Pro checks).
 
 ## :lock: Basic Security
+- [Make sure your .env file is not publicly accessible](env-access-analyzer.html)
 - [Turn Off App Debug In Production](app-debug-analyzer.html)
 - [Hide Sensitive Debug Variables](app-debug-hide-analyzer.html)
 - [Generate Your App Key](app-key-analyzer.html)

@@ -1,4 +1,8 @@
-# HTTP/2 Analyzer
+---
+pro: true
+---
+
+# HTTP/2 Analyzer <Badge text="PRO" type="tip"/>
 
 | Category       | Severity   | Time To Fix  |
 | -------------  |:----------:| ------------:|
