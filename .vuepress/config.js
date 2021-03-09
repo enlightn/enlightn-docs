@@ -66,6 +66,7 @@ module.exports = {
                 '/performance/env-call-analyzer',
                 '/performance/event-caching-analyzer',
                 '/performance/fallback-route-analyzer',
+                '/performance/http-two-analyzer',
                 '/performance/horizon-suggestion-analyzer',
                 '/performance/minification-analyzer',
                 '/performance/mysql-single-server-analyzer',
