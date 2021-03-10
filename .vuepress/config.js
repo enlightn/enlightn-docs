@@ -143,6 +143,7 @@ module.exports = {
                 '/security/up-to-date-dependency-analyzer',
                 '/security/validation-sql-injection-analyzer',
                 '/security/vulnerable-dependency-analyzer',
+                '/security/web-server-fingerprinting-analyzer',
                 '/security/xss-analyzer'
             ],
             collapsable: true,

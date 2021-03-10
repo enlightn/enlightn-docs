@@ -8,7 +8,7 @@ pro: true
 | -------------  |:----------:| ------------:|
 | :rocket: Performance | Major | 10 minutes  |
 
-**Class:** `Enlightn\Enlightn\Analyzers\Performance\HttpTwoAnalyzer`
+**Class:** `Enlightn\EnlightnPro\Analyzers\Performance\HttpTwoAnalyzer`
 
 ## Introduction
 
