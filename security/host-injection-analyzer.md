@@ -16,7 +16,20 @@ This analyzer ensures that your application is not vulnerable to host injection 
 
 Host injection attacks can happen via either the `X-Forwarded-Host` header or the `Host` header:
 1. If your application is behind a load balancer or reverse proxy and it does not set trusted hosts, it will be exposed to host injection attacks via the `X-Forwarded-Host` header. If you have already set the `X-Forwarded-Host` header at your reverse proxy level, you may ignore this analyzer.
-2. If your web server configuration is insecure, it may allow host injection attacks via the `Host` Header. This may happen if you use server name wildcards or do not have catch-all server configurations to catch all requests with unrecognized Host headers.  
+2. If your web server configuration is insecure, it may allow host injection attacks via the `Host` Header. This may happen if you use server name wildcards or do not have catch-all server configurations to catch all requests with unrecognized Host headers.
+
+[This video](https://www.youtube.com/watch?v=KGTTlzZiihw) shows a live demo of the vulnerability. Note that password reset poisoning is just one of the possible attacks. Other attacks that arise from host header injection include web cache poisoning, bypassing authentication, SSRF and virtual host brute-forcing. You may learn more about this [here](https://portswigger.net/web-security/host-header/exploiting).
+
+## Easy Way To Confirm
+
+To confirm that this is an issue, you can use `curl` to fire the following two requests to your application:
+
+```bash
+curl https://myapp.com -H "Host: evil.com"
+curl https://myapp.com -H "X-Forwarded-Host: evil.com" 
+```
+
+If you see `evil.com` in any of the response headers (e.g. Location header) or in any of the response body URLs, then you're vulnerable.
 
 ## How To Fix Host Header Injection
 
@@ -109,5 +122,6 @@ This analyzer is skipped if your application does not use trusted proxies.
 - [Host Injection Demo on A Laravel App](https://www.youtube.com/watch?v=KGTTlzZiihw)
 - [Laravel Documentation on Trusted Proxies](https://laravel.com/docs/requests#configuring-trusted-proxies)
 - [Discussion on Host Injection on the Laravel Repo](https://github.com/laravel/laravel/pull/5477)
+- [Introduction to Host Header Injection Attacks](https://portswigger.net/web-security/host-header/exploiting)
 - [Nginx Documentation on the Real IP Module](http://nginx.org/en/docs/http/ngx_http_realip_module.html)
 - [Nginx Documentation on the Proxy Module](http://nginx.org/en/docs/http/ngx_http_proxy_module.html)

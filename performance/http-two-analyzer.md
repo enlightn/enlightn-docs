@@ -16,6 +16,16 @@ This analyzer confirms whether your application supports the HTTP/2 protocol.
 
 If your application is served over HTTPS connections, HTTP/2 can provide a nice performance boost with request/response multiplexing, header compression and faster TLS handshakes.
 
+## Easy Way To Confirm
+
+To confirm that this is an issue, you can use `curl` to fire the following request to your application:
+
+```bash
+curl -I -L https://myapp.com
+```
+
+After running the above command, check for the first line in the output that displays the HTTP protocol version.
+
 ## How To Fix
 
 If you serve your application through a CDN or load balancer service, you will need to make sure that HTTP/2 is enabled on your service.
