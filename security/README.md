@@ -1,6 +1,6 @@
 # Security
 
-Enlightn has 47 automated security checks (including 27 Enlightn Pro checks).
+Enlightn has 48 automated security checks (including 28 Enlightn Pro checks).
 
 ## :lock: Basic Security
 - [Make sure your .env file is not publicly accessible](env-access-analyzer.html)
@@ -38,6 +38,7 @@ Enlightn has 47 automated security checks (including 27 Enlightn Pro checks).
 - [HSTS Header](hsts-header-analyzer.html)
 - [Clickjacking](clickjacking-analyzer.html) <Badge text="PRO" type="tip"/>
 - [Mime Sniffing](mime-sniffing-analyzer.html) <Badge text="PRO" type="tip"/>
+- [Web Server Fingerprinting](web-server-fingerprinting-analyzer.html) <Badge text="PRO" type="tip"/>
 
 ## :file_folder: Unrestricted File Uploads and DOS Attacks
 - [Arbitrary File Uploads](arbitrary-file-upload-analyzer.html) <Badge text="PRO" type="tip"/>
