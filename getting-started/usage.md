@@ -138,7 +138,15 @@ Finally, after all the checks have run, the `enlightn` Artisan command will outp
 
 The checks indicated as "Not Applicable" were not applicable to your specific application and were skipped. For instance, the CSRF analyzer is not applicable for stateless applications.
 
-The checks reported under the "Error" row indicate the analyzers that failed with exceptions during the analysis. Normally, this should not happen but if it does, the associated error message will be displayed and may have something to do with your application.
+The checks reported under the "Error" row indicate the analyzers that failed with exceptions during the analysis. Normally, this should not happen but if it does, the associated error message will be displayed and may have something to do with your application. See the section below on how to display the full stack trace of these exceptions.
+
+## Displaying Exception Stack Trace
+
+If some of the checks are reported under the "Error" row in your report card as mentioned above, then you may use the `--show-exceptions` option to display the full stack trace of the exceptions thrown during the analysis. This should have something to do with your application and viewing the stack trace will allow you to easily debug them.
+
+```bash
+php artisan enlightn --show-exceptions
+```
 
 ## Before Running Callback
 
