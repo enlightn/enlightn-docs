@@ -1,8 +1,9 @@
 # Performance
 
-Enlightn has 35 automated performance checks (including 18 Enlightn Pro checks).
+Enlightn has 36 automated performance checks (including 18 Enlightn Pro checks).
 
-## :rocket: Performance Quick Wins (In-Built In Laravel)
+## :rocket: Performance Quick Wins (In-Built)
+- [Autoloader Optimization](autoloader-optimization-analyzer.html)
 - [Config Caching](config-caching-analyzer.html)
 - [Route Caching](route-caching-analyzer.html)
 - [View Caching](view-caching-analyzer.html)
