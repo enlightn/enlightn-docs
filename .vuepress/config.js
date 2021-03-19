@@ -54,6 +54,7 @@ module.exports = {
             title: 'Performance Checks',
             path: '/performance/',
             children: [
+                '/performance/autoloader-optimization-analyzer',
                 '/performance/cache-driver-analyzer',
                 '/performance/cache-header-analyzer',
                 '/performance/cdn-analyzer',

@@ -17,7 +17,7 @@ Some of these packages record queries, events and other activities in memory, wh
 To run a Composer install on production, it is recommended to use the `--no-dev` flag to ensure dev dependencies are not installed:
 
 ```bash
-composer install --prefer-dist --no-dev
+composer install --prefer-dist --no-dev -o
 ```
 
 ## References
