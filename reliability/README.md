@@ -1,6 +1,6 @@
 # Reliability
 
-Enlightn has 42 automated reliability checks (including 17 Enlightn Pro checks).
+Enlightn has 43 automated reliability checks (including 17 Enlightn Pro checks).
 
 ## 🧐 Code Reliability and Bug Detection
 
@@ -54,6 +54,7 @@ Enlightn has 42 automated reliability checks (including 17 Enlightn Pro checks).
 
 - [Include a Robust Env Example File](env-example-analyzer.html)
 - [Define All Env Variables](env-variable-analyzer.html)
+- [Define Custom Error Pages](custom-error-page-analyzer.html)
 - [Use Cache Busting](cache-busting-analyzer.html) <Badge text="PRO" type="tip"/>
 - [Setup Composer Scripts for Publishing Vendor Assets](composer-package-publish-analyzer.html) <Badge text="PRO" type="tip"/>
 - [Don't Use Script Terminating Functions](script-terminating-function-analyzer.html) <Badge text="PRO" type="tip"/>

@@ -158,6 +158,7 @@ module.exports = {
                 '/reliability/cache-prefix-analyzer',
                 '/reliability/cache-status-analyzer',
                 '/reliability/cache-busting-analyzer',
+                '/reliability/custom-error-page-analyzer',
                 '/reliability/composer-package-publish-analyzer',
                 '/reliability/composer-validation-analyzer',
                 '/reliability/database-status-analyzer',
