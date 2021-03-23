@@ -1,6 +1,6 @@
 # Performance
 
-Enlightn has 36 automated performance checks (including 18 Enlightn Pro checks).
+Enlightn has 37 automated performance checks (including 19 Enlightn Pro checks).
 
 ## :rocket: Performance Quick Wins (In-Built)
 - [Autoloader Optimization](autoloader-optimization-analyzer.html)
@@ -44,6 +44,7 @@ Enlightn has 36 automated performance checks (including 18 Enlightn Pro checks).
 - [Avoid Env Calls Outside Of Config](env-call-analyzer.html)
 - [Use Separate Redis Database For Locks](shared-cache-lock-analyzer.html)
 - [Use Horizon For Redis Queues](horizon-suggestion-analyzer.html)
+- [Don't Have Xdebug Loaded in Production](xdebug-analyzer.html) <Badge text="PRO" type="tip"/>
 - [Queue Your Notifications](telescope-non-queued-notification-analyzer.html) <Badge text="PRO" type="tip"/>
 - [Avoid Command Constructor Injections](command-constructor-injection-analyzer.html) <Badge text="PRO" type="tip"/>
 - [Avoid Fallback Routes For Better SEO](fallback-route-analyzer.html) <Badge text="PRO" type="tip"/>

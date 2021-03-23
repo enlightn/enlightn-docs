@@ -89,7 +89,8 @@ module.exports = {
                 '/performance/telescope-slow-query-analyzer',
                 '/performance/telescope-slow-response-analyzer',
                 '/performance/unused-global-middleware-analyzer',
-                '/performance/view-caching-analyzer'
+                '/performance/view-caching-analyzer',
+                '/performance/xdebug-analyzer'
             ],
             collapsable: true,
             sidebarDepth: 0,
