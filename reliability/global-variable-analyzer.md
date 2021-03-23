@@ -26,7 +26,7 @@ In an object oriented world, global variables are not recommended. Consider chan
 
 2. **Your application uses [superglobal variables](https://www.php.net/manual/en/language.variables.superglobals).**
 
-Superglobals should not be used when using a framework such as Laravel as it may create issues within your application. For instance, if you use the `$_COOKIES` variable directly, then all your cookie configuration will not be applied to the cookies (e.g. the path, domain and secure attributes). Also, ccokies will not be encrypted.
+Superglobals should not be used when using a framework such as Laravel as it may create issues within your application. For instance, if you use the `$_COOKIES` variable directly, then all your cookie configuration will not be applied to the cookies (e.g. the path, domain and secure attributes). Also, cookies will not be encrypted.
 
 3. **Your application uses PHP native functions such as `setcookie` or `getenv`.**
    
