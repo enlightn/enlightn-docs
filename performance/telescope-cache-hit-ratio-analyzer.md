@@ -91,7 +91,7 @@ class UpdateTelescopeEntriesTable extends Migration
     {
         $this->schema->table('telescope_entries', function (Blueprint $table) {
             $table->json('content')->change();
-        }
+        });
     }
     
     /**
@@ -103,7 +103,7 @@ class UpdateTelescopeEntriesTable extends Migration
     {
         $this->schema->table('telescope_entries', function (Blueprint $table) {
             $table->longText('content')->change();
-        }
+        });
     }
 }
 ```
