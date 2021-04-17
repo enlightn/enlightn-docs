@@ -46,6 +46,7 @@ module.exports = {
                 '/getting-started/configuration',
                 '/getting-started/usage',
                 '/getting-started/github-bot',
+                '/getting-started/web-ui',
                 '/getting-started/contribution-guide',
                 '/getting-started/support'
             ]

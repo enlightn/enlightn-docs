@@ -11,6 +11,14 @@ php artisan enlightn
 
 <img :src="$withBase('/images/terminal.png')" alt="Enlightn Terminal" />
 
+You may add the `--report` flag, if you wish to view your reports in the [Enlightn Web UI](web-ui.html) besides the terminal:
+
+```bash
+php artisan enlightn --report
+```
+
+Remember to add your project credentials (API token and email) in the `config/enlightn.php` file before you run the command above. You may obtain these credentials after a **free** signup on the Enlightn website as described [here](web-ui.html#how-to-get-access-free).
+
 If you wish to run specific analyzer classes, you may specify them as optional arguments:
 
 ```bash
@@ -43,7 +51,13 @@ If you wish to integrate Enlightn with your CI, you can simply trigger the `--ci
 php artisan enlightn --ci
 ```
 
-Enlightn pre-configures which analyzers can be run in CI mode for you. So, the above command excludes analyzers that need a full setup to run (e.g. analyzers using dynamic analysis).
+You may add the `--report` flag if you wish to view your CI reports in the [Enlightn Web UI](web-ui.html). Remember to add your project credentials to your `config/enlightn.php` file as explained [here](web-ui.html#how-to-get-access-free).
+
+```bash
+php artisan enlightn --ci --report
+```
+
+Enlightn pre-configures which analyzers can be run in CI mode for you. So, the above commands exclude analyzers that need a full setup to run (e.g. analyzers using dynamic analysis).
 
 You can additionally exclude analyzers in CI mode (besides the ones pre-configured by Enlightn) using the `ci_mode_exclude_analyzers` configuration option in your `config/enlightn.php` file. 
 
@@ -66,7 +80,7 @@ An example of a Github actions step on running the Enlightn command is as follow
 - name: Run Enlightn Checks
   run: |
     cp .env.example .env
-    php artisan enlightn --ci
+    php artisan enlightn --ci --report
 ```
 
 ## Establishing a Baseline
@@ -88,6 +102,29 @@ php artisan enlightn:baseline --ci
 ```
 
 This will generate the `dont_report` and `ignore_errors` configuration options by only considering the analyzers that run in CI mode.
+
+## Scheduling Enlightn Runs
+
+Besides integrating Enlightn with your CI/CD tool, it's a good practice to schedule an Enlightn run on a regular frequency (such as daily or weekly) like so:
+
+```php
+// In your app/Console/Kernel.php file:
+
+/**
+ * Define the application's command schedule.
+ *
+ * @param  \Illuminate\Console\Scheduling\Schedule  $schedule
+ * @return void
+ */
+protected function schedule(Schedule $schedule)
+{
+    $schedule->command('enlightn --report')->runInBackground()->daily()->at('01:00');
+}
+```
+
+This will allow you to monitor Enlightn's dynamic analysis checks, which are typically excluded from CI. The reports can be viewed on the Enlightn [Web UI](web-ui.html).
+
+Remember to add your project credentials, which can be obtained for free as described [here](web-ui.html#how-to-get-access-free).
 
 ## Authenticating Enlightn Pro in CI Environments
 
@@ -167,4 +204,4 @@ This may be useful for some applications (such as [multi-tenancy apps](https://g
 
 A good practice would be to run Enlightn every time you are deploying code or pushing a new release. It is recommended to integrate Enlightn with your CI/CD tool so that it is triggered for every push or new release.
 
-Besides the automated CI checks, you might also want to run Enlightn on a regular frequency such as every week. This will allow you to monitor the dynamic analysis checks, which are typically excluded from CI tests. 
+Besides the automated CI checks, you might also want to run Enlightn on a regular frequency using a scheduled console command as described [here](#scheduling-enlightn-runs). This will allow you to monitor the dynamic analysis checks, which are typically excluded from CI.
