@@ -1,6 +1,6 @@
 ---
-description: The Enlightn Web UI enables you to view your app's security, performance and reliability issues in a beautiful looking dashboard.
-image: https://cdn.laravel-enlightn.com/images/web_ui.png
+description: The Enlightn Web UI enables you to view your Laravel app's security, performance and reliability issues in a beautiful looking dashboard.
+image: https://cdn.laravel-enlightn.com/images/webui_report.png
 twitterCard: summary_large_image
 ---
 
@@ -11,7 +11,7 @@ twitterCard: summary_large_image
 
 Enlightn provides a beautiful web UI dashboard where you can view your Enlightn reports triggered from your CI or scheduled command runs.
 
-<img :src="$withBase('/images/web_ui.png')" alt="Enlightn Web UI" />
+<img src="https://cdn.laravel-enlightn.com/images/webui_report.png" alt="Enlightn Web UI" />
 
 The web UI dashboard includes the following:
 1. Statistics on pass percentages (overall and by category).
@@ -43,7 +43,7 @@ You can then navigate to the relevant project (or create a new project) on the [
 
 ## Triggering Reports
 
-To trigger an Enlightn report, just add the `--report` flag on the Enlightn command. Make sure you've added the project API token and username (registered email) to your `config/enlightn.php` file.
+To trigger an Enlightn report to be created, just add the `--report` flag on the Enlightn command. Make sure you've added the project API token and username (registered email) to your `config/enlightn.php` file.
 
 So, to trigger a report from your CI environment, just add the `--report` flag:
 
@@ -51,7 +51,7 @@ So, to trigger a report from your CI environment, just add the `--report` flag:
 php artisan enlightn --ci --report
 ```
 
-To trigger a report manually from the terminal, you may run:
+To trigger a report manually from the terminal or as a [scheduled command](usage.html#scheduling-enlightn-runs), you may run:
 
 ```bash
 php artisan enlightn --report
