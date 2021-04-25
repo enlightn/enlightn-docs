@@ -58,7 +58,7 @@ Next, add the following to your `auth.json` file:
     }
 }
 ```
-You can copy your API token by logging into the Laravel Enlightn website and visiting the "Profile" section.
+To obtain your project API token, login on the Enlightn website and visit the [projects page](https://www.laravel-enlightn.com/projects). You can create a project and link it to any of your available (unlinked) licenses. Then, copy the project API token to your `auth.json` file as the password and your registered email as the username.
 
 Next, install the package using the Composer `require` command:
 

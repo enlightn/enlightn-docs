@@ -29,7 +29,7 @@ Here's how the compiled report and review comments look like for every pull requ
 3. Next, visit the [Repositories section](https://www.laravel-enlightn.com/repositories) on the Enlightn website and click on the "**Add Github Repositories**" button. This will redirect to a Github page, where you can choose which repositories you would like to install the Enlightn Github bot on.
 4. After installation of the Github app, you should see your installed repositories in the [Repositories section](https://www.laravel-enlightn.com/repositories). In case you don't see the new installed repositories immediately, you may need to give it a refresh after a few seconds.
 5. Next, integrate Enlightn as a Github action as described [here](usage.html#usage-in-ci-environments). If you are not familiar with Github actions, see below for a [full example of an Enlightn Github action](#full-working-example-of-github-action).
-6. Next, add your Enlightn credentials and Github repository name in your `config/enlightn.php` and `.env` files respectively. Your username is the email you used to register on Enlightn. The API token can be found on the [profile section](https://www.laravel-enlightn.com/user/profile) of the website after logging in.
+6. Next, add your Enlightn credentials and Github repository name in your `config/enlightn.php` and `.env` files respectively. Your username is the email you used to register on Enlightn. The API token can be found on the [projects page](https://www.laravel-enlightn.com/projects) of the website after logging in. Navigate to your relevant project (or create a new project and link it to your Enlightn Pro license) and copy the API token.
 
 ```php
 /*
@@ -43,8 +43,8 @@ Here's how the compiled report and review comments look like for every pull requ
 |
 */
 'credentials' => [
-    'username' => env('ENLIGHTN_USERNAME'),
-    'api_token' => env('ENLIGHTN_API_TOKEN'),
+    'username' => env('ENLIGHTN_USERNAME'), // your registered email
+    'api_token' => env('ENLIGHTN_API_TOKEN'), // your project API token
 ],
 
 // Set this value to your Github repo for integrating with the Enlightn Github Bot
@@ -55,7 +55,7 @@ Here's how the compiled report and review comments look like for every pull requ
 In your `.env` file:
 ```ini
 ENLIGHTN_USERNAME=your@email.com
-ENLIGHTN_API_TOKEN=<your api token here>
+ENLIGHTN_API_TOKEN=<your project API token here>
 ENLIGHTN_GITHUB_REPO=your/repo
 ```
 
@@ -151,6 +151,6 @@ To be completely transparent as to what information is sent, we are including th
 
 This information is used for the Github bot to add the review comments on the pull request diff and for compiling the report comment.
 
-The information may be available for you to view (and share with colleagues as you choose) on the Enlightn website in future releases.
+The information is available for you to view (and share with colleagues as you choose) on the [Enlightn web UI](web-ui.html).
 
-If you do not want to share the above information, do not install the Github bot as without it, it cannot function properly. None of the other Enlightn features share any information, so you are free to use those.
+If you do not want to share the above information, do not install the Github bot as without it, it cannot function properly. Only the Github Bot and the web UI need this information, so if you don't want to share this information, you are free to use any other features of Enlightn.
