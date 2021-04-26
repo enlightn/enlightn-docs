@@ -212,6 +212,7 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
+    ['vuepress-plugin-code-copy', true],
     [
       '@vuepress/google-analytics',
         {

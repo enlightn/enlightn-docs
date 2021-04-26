@@ -19,5 +19,8 @@
     "@vuepress/plugin-medium-zoom": "^1.7.1",
     "vuepress": "^1.5.3",
     "vuepress-plugin-seo": "^0.1.4"
+  },
+  "dependencies": {
+    "vuepress-plugin-code-copy": "^1.0.6"
   }
 }
