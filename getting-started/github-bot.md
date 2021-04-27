@@ -136,6 +136,19 @@ Feel free to modify the PHP version or add services in the workflow above (if ne
 
 Learn more about Github actions [here](https://docs.github.com/en/actions/learn-github-actions/introduction-to-github-actions).
 
+## Bot Comment Behavior
+
+By default, the Enlightn Github bot comments every time it is triggered. You can control this behaviour by changing your project settings on the [projects page](https://www.laravel-enlightn.com/projects).
+
+There are four available options:
+
+1. Always: Comment each time the bot is triggered (default).
+2. On New Issues: Comment only if new issues have been introduced (that did not exist in the previous run).
+3. On Any Issues: Comment if there is at least one issue.
+4. Disabled: To turn off Github bot comments.
+
+Note that this setting is only related to bot comments on the issue/pull request and does not affect review comments on the pull request diff. If any part of new/modified code in the pull request introduces new issues, the bot will trigger review comments on these specific lines of code.
+
 ## Steps to Uninstall
 
 If you want to uninstall the Enlightn Github bot from some of your repositories, just visit the [Repositories section](https://www.laravel-enlightn.com/repositories) on the Enlightn website and click on the "**Add Github Repositories**" button. This will take you to a Github page where you will see the option to configure the Enlightn Github app on your organizations. Click on the relevant organization and then click on the "Uninstall" button on the bottom.
