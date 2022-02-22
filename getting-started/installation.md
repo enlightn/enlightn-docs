@@ -6,7 +6,7 @@
 Enlightn has the following requirements:
 
 - Composer
-- Laravel Framework 6.0-8.x
+- Laravel Framework 6.0-9.x
 
 ## Installing Enlightn
 

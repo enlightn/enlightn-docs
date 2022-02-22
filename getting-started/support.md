@@ -2,7 +2,7 @@
 
 ## Support Policy
 
-All software is supported until the end-of-life term for the underlying Laravel version. For instance, the Enlightn Pro 1.0+ series software supports Laravel 6 to 8. Since Laravel 6 security fixes are valid until September 2022, the Enlightn Pro 1.0+ license series will also extend support until the same period. Beyond this period, support will not be provided.
+All software is supported until the end-of-life term for the underlying Laravel version. For instance, the Enlightn Pro 1.0+ series software supports Laravel 6 to 9. Since Laravel 6 security fixes are valid until September 2022, the Enlightn Pro 1.0+ license series will also extend support until the same period. Beyond this period, support will not be provided.
 
 ## Enlightn OSS
 
