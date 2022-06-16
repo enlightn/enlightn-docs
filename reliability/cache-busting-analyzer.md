@@ -35,7 +35,7 @@ After generating the versioned file, you may use the `mix` helper method within 
 
 ## Skip Condition
 
-This analyzer is skipped if your application does not use Laravel Mix.
+This analyzer is skipped for local environments (if the `skip_env_specific` configuration option is set to true) or your application does not use Laravel Mix.
 
 ## References
 

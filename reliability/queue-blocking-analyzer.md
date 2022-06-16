@@ -36,4 +36,4 @@ This analyzer is skipped if your application does not use the `redis` queue driv
 
 ## References
 
-- [Laravel Documentation on Redis Queues & Blocking](https://laravel.com/docs/8.x/queues#redis)
+- [Laravel Documentation on Redis Queues & Blocking](https://laravel.com/docs/queues#redis)
