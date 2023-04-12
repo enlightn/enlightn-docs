@@ -20,7 +20,7 @@ npm run prod
 
 ## Configuration Options
 
-By default, this analyzer assumes that your compiled JS and CSS files are somewhere within the public directory (sub-directories included). You may customize your build path in your `config/enlight.php` file using the `build_path` configuration option, so that this analyzer searches for compiled CSS and JS files within your custom build path:
+By default, this analyzer assumes that your compiled JS and CSS files are somewhere within the public directory (sub-directories included). You may customize your build path in your `config/enlightn.php` file using the `build_path` configuration option, so that this analyzer searches for compiled CSS and JS files within your custom build path:
 
 ```php
 'build_path' => public_path(),
