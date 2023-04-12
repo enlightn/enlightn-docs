@@ -26,6 +26,22 @@ If any of the above settings differ from the recommendations, this analyzer woul
 While changing the above settings, make sure you make the relevant changes to the `php.ini` file for both the FPM and CLI.
 :::
 
+## Configuration Options
+
+By default, this analyzer includes all the checks listed above. You may customize the checks in your `config/enlightn.php` file using the `php_secure_settings` configuration option. This is an associative array with the keys representing the checks to test for and the boolean values (true/false) representing whether the configuration should be enabled or disabled. So, for instance, if you would like to remove a specific check, you can delete the respective key for that check.
+
+```php
+'php_secure_settings' => [
+    'allow_url_fopen' => false,
+    'allow_url_include' => false,
+    'expose_php' => false,
+    'display_errors' => false,
+    'display_startup_errors' => false,
+    'log_errors' => true,
+    'ignore_repeated_errors' => false,
+],
+```
+
 ## References
 
 - [OWASP PHP Configuration Guide](https://cheatsheetseries.owasp.org/cheatsheets/PHP_Configuration_Cheat_Sheet.html)
