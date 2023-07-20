@@ -107,3 +107,13 @@ If you wish to display all the files for all checks, you may set the `compact_li
 ## Analyzer Specific Configuration Options
 
 There are some configuration options that are specific to certain analyzers. To learn more, you may refer the documentation for the specific analyzers, which will include the analyzer configuration options (if any).
+
+## Customize Memory Limit
+
+If you face any memory limit exhausted issues, you may supply a custom memory limit for running Enlightn like so:
+
+```bash
+php -d memory_limit=512M artisan enlightn
+```
+
+The same memory limit is then passed to PHPStan for its static analysis checks.
