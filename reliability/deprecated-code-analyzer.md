@@ -2,7 +2,7 @@
 
 | Category       | Severity   | Time To Fix  |
 | -------------  |:----------:| ------------:|
-| :white_check_mark: Reliability | Minor | 5 minutes    |
+| :white_check_mark: Reliability | Minor | 10 minutes    |
 
 **Class:** `Enlightn\Enlightn\Analyzers\Reliability\DeprecatedCodeAnalyzer`
 

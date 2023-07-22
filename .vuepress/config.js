@@ -185,6 +185,7 @@ module.exports = {
                 '/reliability/invalid-offset-analyzer',
                 '/reliability/invalid-return-type-analyzer',
                 '/reliability/maintenance-mode-analyzer',
+                '/reliability/missing-model-relation-analyzer',
                 '/reliability/missing-return-statement-analyzer',
                 '/reliability/pcntl-analyzer',
                 '/reliability/queue-blocking-analyzer',
