@@ -1,6 +1,6 @@
 # Reliability
 
-Enlightn has 43 automated reliability checks (including 17 Enlightn Pro checks).
+Enlightn has 45 automated reliability checks (including 17 Enlightn Pro checks).
 
 ## 🧐 Code Reliability and Bug Detection
 
@@ -48,6 +48,7 @@ Enlightn has 43 automated reliability checks (including 17 Enlightn Pro checks).
 ## :ghost: Dead Routes and Dead Code
 
 - [Dead Code](dead-code-analyzer.html)
+- [Deprecated Code](deprecated-code-analyzer.html)
 - [Dead Routes](dead-route-analyzer.html) <Badge text="PRO" type="tip"/>
 
 ## :medal_sports: Good Practices
