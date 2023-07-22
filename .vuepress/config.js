@@ -165,6 +165,7 @@ module.exports = {
                 '/reliability/database-status-analyzer',
                 '/reliability/dead-code-analyzer',
                 '/reliability/dead-route-analyzer',
+                '/reliability/deprecated-code-analyzer',
                 '/reliability/directory-write-permissions-analyzer',
                 '/reliability/disk-space-analyzer',
                 '/reliability/env-example-analyzer',
