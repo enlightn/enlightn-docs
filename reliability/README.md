@@ -13,6 +13,7 @@ Enlightn has 45 automated reliability checks (including 17 Enlightn Pro checks).
 - [Invalid Property Access](invalid-property-access-analyzer.html)
 - [Invalid Return Type](invalid-return-type-analyzer.html)
 - [Invalid Unset](unset-analyzer.html)
+- [Missing Model Relation](missing-model-relation-analyzer.html)
 - [Missing Return Statement](missing-return-statement-analyzer.html)
 - [Syntax Error](syntax-error-analyzer.html)
 - [Undefined Constant](undefined-constant-analyzer.html)
