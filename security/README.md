@@ -1,6 +1,6 @@
 # Security
 
-Enlightn has 48 automated security checks (including 28 Enlightn Pro checks).
+Enlightn has 49 automated security checks (including 28 Enlightn Pro checks).
 
 ## :lock: Basic Security
 - [Make sure your .env file is not publicly accessible](env-access-analyzer.html)
@@ -11,6 +11,7 @@ Enlightn has 48 automated security checks (including 28 Enlightn Pro checks).
 - [Secure PHP Configuration](php-ini-analyzer.html)
 - [Set Safe File and Directory Permissions](file-permissions-analyzer.html)
 - [Login Throttling](login-throttling-analyzer.html)
+- [Hashing Strength](hashing-strength-analyzer.html)
 - [Your Code Shouldn't Contain Debug Statements](debug-statement-analyzer.html) <Badge text="PRO" type="tip"/>
 - [Your Code Shouldn't Contain Hard Coded Credentials](hard-coded-credentials-analyzer.html) <Badge text="PRO" type="tip"/>
 

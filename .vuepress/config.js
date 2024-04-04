@@ -121,6 +121,7 @@ module.exports = {
                 '/security/fillable-foreign-key-analyzer',
                 '/security/frontend-vulnerable-dependency-analyzer',
                 '/security/hard-coded-credentials-analyzer',
+                '/security/hashing-strength-analyzer',
                 '/security/horizon-security-analyzer',
                 '/security/host-injection-analyzer',
                 '/security/hsts-header-analyzer',
