@@ -5,7 +5,7 @@ After publishing Enlightn's assets, its primary configuration file will be locat
 
 ## Configuring Analyzers
 
-Enlightn has 130 checks (including the Enlightn Pro checks). Each check corresponds to an "analyzer" class that conducts the actual analysis when you run the `enlightn` Artisan command.
+Enlightn has 131 checks (including the Enlightn Pro checks). Each check corresponds to an "analyzer" class that conducts the actual analysis when you run the `enlightn` Artisan command.
 
 By default, Enlightn runs all of its analyzers. You may customize the list of Enlightn analyzer classes to run by using the `analyzers` configuration option:
 
