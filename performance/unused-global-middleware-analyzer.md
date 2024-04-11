@@ -20,7 +20,7 @@ This analyzer checks to see if there are any "unused" global middleware classes 
 
 To fix this issue, simply remove all the unused global middleware from your `App\Http\Kernel` class.
 
-If you are using Laravel 11, make sure to [adjust your global middleware stack](https://laravel.com/docs/middleware#manually-managing-laravels-default-global-middleware) in your `bootstrap/app.php` file.
+If you are using Laravel 11+, make sure to [adjust your global middleware stack](https://laravel.com/docs/middleware#manually-managing-laravels-default-global-middleware) in your `bootstrap/app.php` file.
 
 ## References
 
